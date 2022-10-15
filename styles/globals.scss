@@ -58,15 +58,16 @@ body.light {
 .dark > * > * > .sidebar {
   background: var(--bg-color-dark);
 }
-.light > * > * > .sidebar {
-  background: var(--bg-color-light);
-}
-body > * > * > .sidebar {
+.light > * > * > .sidebar, body > * > * > .sidebar {
   background: var(--bg-color-light);
 }
 
+.sidebar.active span {
+  transform: translateX(0);
+}
 .sidebar {
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   gap: 0.25rem;
   height: 100vh;
@@ -85,6 +86,12 @@ body > * > * > .sidebar {
     cursor: pointer;
     img {
       padding: 0.25rem;
+    }
+    span {
+      display: block;
+      position: relative;
+      transition: all var(--transition-short) ease-in-out;
+      transform: translateX(-10rem);
     }
     span:hover {
       color: var(--accent-color);
@@ -113,15 +120,26 @@ body > * > * > .sidebar {
       gap: 0.5rem;
       cursor: pointer;
     }
-    .end {
-      font-weight: 600;
-      font-size: 3rem;
-      color: #3e98a6;
-      cursor: pointer;
-    }
   }
   &.active {
     width: 12rem !important;
+  }
+}
+
+.endItems a, .endItems div {  
+  &.linkedin, &.instagram, &.end {
+    position: relative;
+    transition: all var(--transition-short) ease-in-out;
+    transform: translateX(0);
+  }
+  &.active.linkedin, &.active.instagram, &.active.end {
+    transform: translateX(8.5rem);
+  }
+  &.active.end img {
+    transform: rotate(-90deg);
+  }
+  &.end img {
+    transform: rotate(90deg);
   }
 }
 

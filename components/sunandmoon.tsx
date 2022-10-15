@@ -4,17 +4,10 @@ import { getTheme, setTheme, Theme } from "./logic/theme";
 
 
 export default function SunAndMoon() {
-  const [mode, setMode] = useState(null);
+  const [mode, setMode] = useState(false);
   const toggleMode = () => {
-    console.log("toggleMode: " + mode);
-    if (mode === null){
-      const theme = getTheme();
-      setTheme(theme);
-      setMode(theme === Theme.Light ? false : true);
-    } else {
     setTheme(mode ? Theme.Light : Theme.Dark);
     setMode(!mode)
-    }
   };
   return (
     <div className={`mode ${mode ? "active" : ""}`}  onClick={toggleMode}>
