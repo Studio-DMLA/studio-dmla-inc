@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import Sidebar from '../components/sidebar'
 import SunAndMoon from '../components/sunandmoon'
 import '../styles/globals.scss'
@@ -22,6 +23,26 @@ function MyApp({ Component, pageProps }) {
       <meta name="description" content="At Studio DMLA we believe that work should go beyond the industrial model, and we build a culture that empowers remote collaboration, autonomy, results" />
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=UA-175451161-1"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-175451161-1');
+        `}
+      </Script>
+    <Script
+      type="text/javascript"
+      id="hs-script-loader"
+      strategy="afterInteractive"
+      src="//js.hs-scripts.com/6868694.js"
+    ></Script>
+  <Script src="//js.hsforms.net/forms/shell.js"></Script>
     <Sidebar />
     <div className="route"> 
       <Component {...pageProps} />

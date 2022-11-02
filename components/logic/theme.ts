@@ -8,7 +8,6 @@ export function initTheme(): Theme {
   if (typeof window !== "undefined") {
     theme = window.localStorage.getItem("theme") ? window.localStorage.getItem("theme") as Theme : window.matchMedia("(prefers-color-scheme: dark)").matches ? Theme.Dark : Theme.Light;
   }
-  console.log(theme);
   return theme;
 }
 
