@@ -1,0 +1,19 @@
+[debug] [2022-11-02T18:27:48.041Z] ----------------------------------------------------------------------
+[debug] [2022-11-02T18:27:48.043Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Rleeu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2022-11-02T18:27:48.043Z] CLI Version:   11.15.0
+[debug] [2022-11-02T18:27:48.044Z] Platform:      win32
+[debug] [2022-11-02T18:27:48.044Z] Node Version:  v18.7.0
+[debug] [2022-11-02T18:27:48.045Z] Time:          Wed Nov 02 2022 11:27:48 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-11-02T18:27:48.045Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-02T18:27:48.134Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-02T18:27:48.135Z] > authorizing via signed-in user (rleeuwerink@gmail.com)
+[debug] [2022-11-02T18:27:48.135Z] [iam] checking project studio-dmla-dev for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-11-02T18:27:48.138Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-dmla-dev:testIamPermissions [none]
+[debug] [2022-11-02T18:27:48.138Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-dmla-dev:testIamPermissions x-goog-quota-user=projects/studio-dmla-dev
+[debug] [2022-11-02T18:27:48.139Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-dmla-dev:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-02T18:27:48.315Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-dmla-dev:testIamPermissions 200
+[debug] [2022-11-02T18:27:48.315Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/studio-dmla-dev:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-02T18:27:48.316Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/studio-dmla-dev [none]
+[debug] [2022-11-02T18:27:48.536Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/studio-dmla-dev 200
+[debug] [2022-11-02T18:27:48.536Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/studio-dmla-dev {"projectId":"studio-dmla-dev","projectNumber":"280166480883","displayName":"studio DMLA-dev","name":"projects/studio-dmla-dev","resources":{"hostingSite":"studio-dmla-dev","realtimeDatabaseInstance":"studio-dmla-dev","storageBucket":"studio-dmla-dev.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_194e57eb-c865-4939-ae6b-c1c53c5dc65d"}
