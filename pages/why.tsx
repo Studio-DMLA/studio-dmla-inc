@@ -1,8 +1,9 @@
 import Link from "next/link";
+import HomeStyles from '../styles/Home.module.scss';
 
 export default function WhyPage() {
   return (
-    <div>
+    <div className='page_content'>   
       <h1>About studio DMLA</h1>
       <p>At Studio DMLA we believe that work should go beyond the industrial model, and we build a culture that empowers remote collaboration, autonomy, results, and a shared vision. </p>
       <p>We do not do business as usual. Our digital boutique has real connections with our clients, provides perspective, and solutions for problems they did not know they have. </p>

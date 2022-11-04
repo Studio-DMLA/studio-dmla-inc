@@ -4,7 +4,14 @@ import { getTheme } from "./logic/theme";
 
 export default function Sidebar() {
   const [hovered, setHovered] = useState(false);
-  const toggleHover = () => setHovered(!hovered);
+  const toggleHover = () => {
+    setHovered(!hovered)
+    if (typeof window !== "undefined") {
+      const route = document.getElementsByClassName('route');
+      !hovered ? route[0].classList.add('sidebar_open') : 
+      route[0].classList.remove('sidebar_open');
+    }
+  };
 
   const theme = getTheme();
   return (

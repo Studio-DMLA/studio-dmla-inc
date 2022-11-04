@@ -17,6 +17,7 @@ body > div {
   background-image: url(/assets/squares-bg-light.svg);
 }
 
+
 a {
   color: inherit;
   text-decoration: none;
@@ -29,12 +30,13 @@ a {
 :root {
   font-size: 16px;
   font-family: Dosis,sans-serif;
-  --accent-color: #3e98a6;
-  --bg-color-dark: #262626;
-  --bg-color-light: #f1f0f0;
-  --text-light-grey: #8a8c8e;
-  --text-dark-medium: #737373;
-  --text-dark-grey: #232f32;
+  --icon-hover-filter: invert(51%) sepia(31%) saturate(704%) hue-rotate(140deg) brightness(97%) contrast(91%);
+  --accent-color: rgb(62, 152, 166);
+  --bg-color-dark: rgb(38, 38, 38);
+  --bg-color-light: rgb(241, 240, 240);
+  --text-light-grey: rgb(138, 140, 142);
+  --text-dark-medium: rgb(115, 115, 115);
+  --text-dark-grey: rgb(35, 47, 50);
   --transition-short: 450ms;
   --transition-long: 900ms;
 }
@@ -78,6 +80,17 @@ body.light {
   padding-right: 0.2rem;
   transition: all var(--transition-short) ease-in-out;
   z-index: 1000;
+  & div:hover:not(.endItems) {
+    span {
+      color: var(--accent-color);
+    }
+    img.icon {
+      filter: var(--icon-hover-filter);
+    }
+    svg.icon {
+      filter: var(--icon-hover-filter);
+    }
+  }
   & > * {
     max-height: 2.5rem;
     line-height: 2.5rem;
@@ -97,10 +110,10 @@ body.light {
       color: var(--accent-color);
     }
     img.icon:hover {
-      filter: invert(51%) sepia(31%) saturate(704%) hue-rotate(140deg) brightness(97%) contrast(91%);
+      filter: var(--icon-hover-filter);
     }
     svg.icon:hover {
-      filter: invert(51%) sepia(31%) saturate(704%) hue-rotate(140deg) brightness(97%) contrast(91%);
+      filter: var(--icon-hover-filter);
     }
   }
   & > *:first-child {
@@ -143,6 +156,22 @@ body.light {
   }
 }
 
+.page_content {
+  display: grid;
+  grid-column: 1fr;
+  width: 80vw;
+  padding: 0 2.5rem;
+  max-height: 100vh;
+}
+.dark > * > * > * > .page_content {
+  background-color: var(--bg-color-dark) !important;
+  opacity: 0.90;
+}
+.light > * > * > * > .page_content {
+  background-color: var(--bg-color-light) !important;
+  opacity: 0.90;
+}
+
 .page {
   display: grid;
   grid-auto-flow: column;
@@ -152,13 +181,17 @@ body.light {
   padding: 0;
 }
 .route {
-  display: flex;
-  position: absolute;
+  display: grid;
+  position: relative;
   top: 0;
-  height: 100vh;
-  max-width: calc(100vw - 2.5rem);
-  margin-left: 2.5rem;
-  margin-right: auto;
+  max-height: 100vh;
+  margin: 0 auto;
+  width: calc(100vw - 6rem);
+  transition: all var(--transition-short) ease-in-out;
+}
+.route.sidebar_open {
+  width: calc(100vw - 16rem);
+  overflow-x: hidden;
 }
 
 .mode {
@@ -202,4 +235,132 @@ body.light {
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+
+.actionpoints {
+  padding-top: 2rem;
+  justify-self: center;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 600.01px) {
+    width: 50%;
+  }
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  a.action-card {
+    text-decoration: none;
+    text-align: center;
+    color: var(--text-dark-grey);
+
+    svg {
+      max-width: 5rem;
+      max-height: 5rem;
+    }
+  }
+}
+
+.lower {
+  position: relative;
+  top: 0.2rem;
+}
+
+.MP {
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 600.01px) {
+    display: flex;
+  }
+
+  .img {
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 600.01px) {
+      align-self: center;
+      width: 20%;
+    }
+
+  }
+
+  .description {
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 600.01px) {
+      padding: 0.25rem 1rem;
+      width: 80%;
+    }
+  }
+}
+
+.portfolio-items {
+  display: grid;
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(auto, minMax(50%, 1fr));
+  }
+
+  @media only screen and (min-width: 600.01px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+
+  .portfolio-card {
+    @media only screen and (max-width: 600px) {
+      height: 100%;
+      width: 100%
+    }
+
+    @media only screen and (min-width: 600.01px) {
+      height: 30vw;
+      width: 20vw;
+    }
+
+    overflow: hidden;
+
+    .img {
+      width: 100%;
+      position: relative;
+      display: block;
+      top: -1.5rem;
+    }
+
+    h3 {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      background-color: var(--bg-color-light);
+
+      span {
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+iframe {
+  width: 100%;
+  height: calc(100vh - 5rem);
+}
+
+iframe {
+  border-width: 0 !important;
+  border-style: none !important;
+  border-color: none !important;
+  border-image: none !important;
 }
