@@ -1,5 +1,4 @@
-
-import HomeStyles from '../styles/Home.module.scss'
+import Link from 'next/link'
 
 export default function ServicesPage() {
   return (
@@ -33,13 +32,13 @@ export default function ServicesPage() {
       </ul>
       <h3>Lets get started:</h3>
       <p >
-        1.	Set up an <a href="/meeting">initial call</a> to discuss your digital marketing needs and goals;
+        1.	Set up an <Link href="/meeting">initial call</Link> to discuss your digital marketing needs and goals;
       </p>
       <p>
-        2.	We’ll create a strategy and source the best professionals globally to work on your project;
+        2.	We`&quot;`ll create a strategy and source the best professionals globally to work on your project;
       </p>
       <p>
-        3.	You’ll have one point of contact, from the planning until the final product is delivered.
+        3.	You`&quot;`ll have one point of contact, from the planning until the final product is delivered.
       </p>
     </div>
   )
