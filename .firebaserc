@@ -1,5 +1,11 @@
 {
   "projects": {
     "default": "studio-dmla-dev"
+  },
+  "targets": {},
+  "etags": {
+    "studio-dmla-dev": {
+      "extensionInstances": {}
+    }
   }
 }
