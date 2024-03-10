@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
-    "start": "next start",
-    "deploy": "firebase deploy"
+    "start": "next start"
   },
   "dependencies": {
     "next": "latest",

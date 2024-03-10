@@ -1,0 +1,13 @@
+{
+  "name": "studio-dmla-inc",
+  "version": "0.5.0",
+  "scripts": {
+    "deploy": "firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "studio-dmla-inc"
+  },
+  "author": "Robert Leeuwerink",
+  "license": "ISC"
+}
