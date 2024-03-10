@@ -1,0 +1,64 @@
+.aboutus {
+  display: grid;
+  background-color: var(--primary-color);
+  color: var(--mute-color);
+  grid-template-columns: subgrid;
+  padding: var(--gap) 0;
+}
+
+.mission {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: calc(var(--gap)/2);
+  align-items: center;
+}
+
+.mission > p {
+  grid-column: span 2;
+}
+
+.values {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: calc(var(--gap)/2);
+  align-items: center;
+
+}
+
+.values > p {
+  grid-column: span 2;
+}
+
+.subgrid {
+  display: grid;
+  grid-template-columns: minmax(200px, 40%) minmax(250px, 60%);
+  gap: calc(var(--gap)/2);
+}
+
+@media screen and (max-width: 530px) {
+  .subgrid {
+    grid-template-columns: 1fr;
+  }  
+}
+
+.ourteam {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.ourteam > h3 {
+  font-size: xx-large;
+  font-weight: 400;
+
+}
+.ourassociates {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.ourassociates > h3 {
+  font-size: xx-large;
+  font-weight: 300;
+}

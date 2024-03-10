@@ -1,0 +1,55 @@
+.image {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: start;
+  margin-bottom: 0.5rem;
+}
+
+.image > img {
+  grid-area: 1 / 1;
+}
+
+.strokeImage {
+  position: relative;
+  left: 5rem;
+}
+
+.plusImage {
+  position: relative;
+  top: 9rem;
+}
+
+.image_container {
+  gap: 0.25rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: calc(var(--gap));
+}
+
+.topMargin {
+  margin-top: 0.75rem;
+}
+.bottomMargin {
+  margin-bottom: 0.5rem;
+}
+
+.subject {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: start;
+  margin-top: calc(var(--gap)/2);
+}
+
+.subjectImage {
+  position: relative;
+  left: -1.5rem;
+}
+.subjectImage, .subjectTitle {
+  grid-area: 1 / 1;
+}
+

@@ -1,0 +1,34 @@
+.associates {
+  display: block;
+}
+
+.carrosal {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.select > img {
+  display: block;
+  clip-path: circle(50% at 50% 50%);
+}
+.select {  
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid rgba(111, 178, 188, 1);
+}
+
+.select.selected {
+  border: 2px solid rgba(174, 255, 2, 1);
+
+}
+
+.selected {
+  display: flex;
+
+}

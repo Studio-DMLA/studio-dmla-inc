@@ -1,0 +1,25 @@
+.ourimpact {
+  display: grid;
+  background-color: var(--mute-color);
+  padding: var(--gap) 0;
+}
+
+.globeHeadline {
+  display: flex;
+  gap: var(--gap);
+  margin-bottom: var(--gap);
+}
+
+.globeHeadline > img {
+  display: block;
+}
+.globeHeadline > h3 {
+  font-size: 3.2rem;
+}
+
+.mainContent {
+  display: block;
+}
+.mainContent > :first-child {
+  margin-bottom: calc(var(--gap) / 2);
+}

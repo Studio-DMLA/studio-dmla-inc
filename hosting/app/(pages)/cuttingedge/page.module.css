@@ -1,0 +1,83 @@
+.cuttingedge {
+  display: grid;
+  background-color: var(--gray-light-color);
+  padding: var(--gap) 0;
+  grid-template-columns: subgrid;
+}
+
+.angle {
+  width: 400px;
+  height: 42.5px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.specialize {
+  display: flex;
+  gap: var(--gap);
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: space-around;
+}
+.spec {
+  display: grid;
+  justify-items: center;
+  min-width: 190px;
+}
+
+.bullet {
+  display: grid;
+  align-items: center;
+  gap: 0.25rem;
+  grid-template-columns: 1rem 1fr;
+}
+.bullet > div {
+  display: grid;
+  justify-items: center;
+}
+
+.waystowork {
+  display: block;
+}
+.titleArea {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  padding: var(--gap);
+}
+.titleArea > h3 {
+  font-size: x-large;
+}
+.titleArea > img {
+  grid-row: span 2;
+}
+
+.ways {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ways > :first-child {
+  grid-row: span 2 !important;
+}
+.way {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: start;
+  position: relative;
+}
+
+.way > :first-child {
+  grid-row: span 2 !important;
+  justify-self: end;
+  margin-right: 0.5rem;
+}
+.waytitle {
+  border-bottom: solid 2px var(--primary-color);
+  position: relative;
+  padding-left: 0.5rem;
+  left: -0.5rem;
+  width: fit-content;
+}

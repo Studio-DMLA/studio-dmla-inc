@@ -1,0 +1,11 @@
+.spotlightContainer {
+  background-color: var(--gray-light-color);
+  color: var(--gray-medium-color);
+  display: grid;
+  padding: var(--gap) 0;
+}
+
+.title {
+  color: var(--primary-color);
+  text-transform: uppercase;
+}

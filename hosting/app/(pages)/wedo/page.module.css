@@ -1,0 +1,28 @@
+.wedo {
+  display: grid;
+  background-color: var(--mute-color);
+  padding: var(--gap) 0;
+}
+
+.title {
+  color: var(--primary-color) !important;
+  text-transform: uppercase;
+}
+.ruitencolor {
+  filter: invert(25%) sepia(52%) saturate(1319%) hue-rotate(147deg) brightness(98%) contrast(103%);
+  fill: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.letsGetStarted {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 33.3333%));
+  row-gap: calc(var(--gap) /2);
+  column-gap: var(--gap);
+}
+
+.titleGetStarted {
+  display: flex;
+  gap: calc(var(--gap)/2);
+  grid-column: span 3;
+}

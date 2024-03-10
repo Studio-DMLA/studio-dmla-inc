@@ -1,0 +1,31 @@
+.sectionHeaderContent {
+  display: grid;
+  grid-template-columns: 10rem 1fr 10rem;
+  grid-template-rows: 58% 1fr;
+  column-gap: var(--gap);
+}
+.headerContentText {
+  position: relative;             
+  display: grid;
+}
+.ruiten {
+  grid-row: span 2;
+  -ms-grid-row-span: 2;
+}
+.title {
+  align-self: end;
+  text-transform: uppercase;
+  grid-column: span 2;
+}
+
+.subtitles {
+  align-self: start;
+}
+.lightTitle{
+  color: var(--primary-color) !important;
+}
+.ruitenDarker {
+  filter: invert(25%) sepia(52%) saturate(1319%) hue-rotate(147deg) brightness(98%) contrast(103%);
+  fill: var(--primary-color);
+  color: var(--primary-color);
+}

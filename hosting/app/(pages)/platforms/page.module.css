@@ -1,0 +1,11 @@
+.platformsContainer {
+  background-color: var(--gray-light-color);
+  color: var(--primary-color);
+  display: grid;
+  padding: var(--gap) 0;
+}
+
+.platforms {
+  display: flex;
+  
+}
