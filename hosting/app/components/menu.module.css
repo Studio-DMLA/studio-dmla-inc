@@ -1,51 +1,19 @@
-.dmla-menu-bar.hide-on-mobile {
-position: relative;
-  display: grid;
-  grid-auto-flow: column;
-  gap: 32px;
-  align-items: baseline;
-  grid-template-columns: repeat(auto, 1fr);
-}
-  
-.line45 {
-  border-bottom: white 1px solid;
-  width: 24px;
-  bottom: -4px;
-  right: 4px;
-  position: relative;
-  transform: rotate(-45deg);
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 95, 104;
+  --background-end-rgb: 0, 95, 104;
+  --menu-gradient-start: 35, 47, 50, 1;
 }
 
-.navButton {
-  display: grid;
-  grid-auto-flow: column;
-  position: relative;  
-  align-items: center;
-  width: 100%;
-
-  .nav-pre-icon {
-    border-bottom: white 1px solid;
-    display: grid;
-    height: 100%;
-    align-items: center;
-    padding-right: 0.5rem;
-  }
-
-  .text {
-    white-space: nowrap;
-    border-bottom: white 1px solid;
-    padding-right: 1rem;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 95, 104;
+    --background-end-rgb: 0, 95, 104;
+    --menu-gradient-start: 35, 47, 50, 1;
   }
 }
-.nav-underline {
-  display: grid;
-  grid-column: 1;
-  grid-row: 1;
-  left: 2rem;
-  position: relative;
-  top: 0.2em;
-}
-.nav-gradient {
+.navGradient {
   width: 100vw;
   height: 5.28rem;
   background: linear-gradient(
@@ -54,10 +22,7 @@ position: relative;
       rgb(var(--background-end-rgb))
     )
     rgb(var(--menu-gradient-start));
-    padding-bottom: 0.8rem;
-}
-
-.sticky {
+  padding-bottom: 0.8rem;
   display: grid;
   position: fixed;
   z-index: 999;
@@ -65,16 +30,34 @@ position: relative;
   align-content: end;
 }
 
-nav.dmla-menu-bar {
+.menuBar.hide-on-mobile {
+  position: relative;
   display: grid;
-  gap: 0.5rem;
+  grid-auto-flow: column;
+  gap: 32px;
+  align-items: baseline;
+  grid-template-columns: repeat(auto, 1fr);
+}
+
+.menuBar {
+  display: grid;
+  gap: calc(var(--gap)/2);
   grid-auto-flow: column;
   grid-template-columns: 5rem 1fr 5rem;
   align-items: end;
 }
-.search-icon {
+.searchIcon {
   justify-self: end;
 }
-.brand-image {
+.brandImage {
   justify-self: center;
+}
+
+.nav-underline {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  left: 2rem;
+  position: relative;
+  top: 0.2em;
 }

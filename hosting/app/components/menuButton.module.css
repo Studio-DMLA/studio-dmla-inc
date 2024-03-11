@@ -1,0 +1,31 @@
+.navPreIcon {
+  border-bottom: white 1px solid;
+  display: grid;
+  height: 100%;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+.text {
+  white-space: nowrap;
+  border-bottom: white 1px solid;
+  padding-right: 1rem;
+}
+
+
+.navButton {
+  display: grid;
+  grid-auto-flow: column;
+  position: relative;  
+  align-items: center;
+  width: 100%;
+}
+  
+.line45 {
+  border-bottom: white 1px solid;
+  width: 24px;
+  bottom: -4px;
+  right: 4px;
+  position: relative;
+  transform: rotate(-45deg);
+}

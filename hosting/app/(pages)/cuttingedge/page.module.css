@@ -57,6 +57,7 @@
 .ways {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: calc(var(--gap)/2);
 }
 
 .ways > :first-child {

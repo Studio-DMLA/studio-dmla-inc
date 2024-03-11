@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "./menuButton.module.css";
 
 export default function MenuButton(props: {
   startIcon?: string;
@@ -14,14 +15,14 @@ export default function MenuButton(props: {
     href: "#" + props.href,
   };
   return (
-    <Link href={props.href} className="navButton">
+    <Link href={props.href} className={styles.navButton}>
       {props.startIcon ? (
-        <span className="nav-pre-icon">
+        <span className={styles.navPreIcon}>
           <img className="icon" loading="lazy" alt="menu" {...attriPreIcon} />
         </span>
       ) : null}
-      <span className="text">{props.text}</span>
-      <span className="line45"></span>
+      <span className={styles.text}>{props.text}</span>
+      <span className={styles.line45}></span>
     </Link>
   );
 }

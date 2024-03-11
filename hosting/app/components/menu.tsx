@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import "./menu.module.css";
+import styles from "./menu.module.css";
 import MenuButton from "./menuButton";
 
 export default function Menu() {
   return (
-    <div className="nav-gradient sticky full">
+    <div className={styles.navGradient + ' full'}>
       <nav
-        className="dmla-menu-bar hide-on-desktop hide-on-tablet"
+        className={styles.menuBar + " hide-on-desktop hide-on-tablet"}
         style={{ width: "21.875rem" }}
       >
         <img
@@ -19,7 +19,7 @@ export default function Menu() {
           }}
         />
         <img
-          className="brand-image"
+          className={styles.brandImage}
           src="/Studio DMLA brand.svg"
           loading="lazy"
           alt="menu"
@@ -29,7 +29,7 @@ export default function Menu() {
           }}
         />
         <img
-          className="search-icon"
+          className={styles.searchIcon}
           src="/Button - SEARCH mobile.svg"
           loading="lazy"
           alt="menu"
@@ -39,9 +39,9 @@ export default function Menu() {
           }}
         />
       </nav>
-      <nav className="dmla-menu-bar hide-on-mobile">
+      <nav className={styles.menuBar + " hide-on-mobile"}>
         <img
-          className="brand-image"
+          className={styles.brandImage}
           src="/Studio DMLA brand.svg"
           loading="lazy"
           alt="menu"
