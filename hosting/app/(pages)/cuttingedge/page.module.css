@@ -2,16 +2,6 @@
   display: grid;
   background-color: var(--gray-light-color);
   padding: var(--gap) 0;
-  grid-template-columns: subgrid;
-}
-
-.angle {
-  width: 400px;
-  height: 42.5px;
-  background-color: var(--primary-color);
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .specialize {

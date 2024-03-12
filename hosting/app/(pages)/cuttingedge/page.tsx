@@ -5,25 +5,25 @@ const specialize = [
   {
     image_url: "web-mobile_cutting-edge.svg",
     image_alt: "Specialize in web development and mobile browsers",
-    text: ["Web development", "design & maintenance"],
+    text: ["Web Development", "Design & Maintenance"],
     link: "",
   },
   {
     image_url: "technical seo.svg",
     image_alt: "Specialize in web development and mobile browsers",
-    text: ["Technical SEO (search", "engine optimization)"],
+    text: ["Technical SEO (Search", "Engine Optimization)"],
     link: "",
   },
   {
     image_url: "drawing tablet.svg",
     image_alt: "Specialize in web development and mobile browsers",
-    text: ["Digital &", "graphic design"],
+    text: ["Digital &", "Graphic Design"],
     link: "",
   },
   {
     image_url: "3d on laptop.svg",
     image_alt: "Specialize in web development and mobile browsers",
-    text: ["3D rendering"],
+    text: ["3D Rendering"],
     link: "",
   },
 ];
@@ -31,7 +31,7 @@ const specialize = [
 const waystowork = [
   {
     title: "Direct placement:",
-    text: "We place professionals, such as software developers, from Latin America directly into your company in North America. They will work remotely and become part of your team while enjoying the added support of the Studio DMLA team such as weekly meetings, one-to-one preparation for dev demos, English workshops and one-to-one language support, and more.",
+    text: "We place professionals, such as software developers, from Latin America directly into your company in North America. They will work remotely and become part of your team while enjoying the added support of the Studio DMLA team such as weekly meetings, one-to-one preparation for dev demos, English workshops and language support, and more.",
     image_url: "number1.svg",
     image_alt: "icon for direct placement",
   },
@@ -43,7 +43,7 @@ const waystowork = [
   },
   {
     title: "Per scope:",
-    text: "We implement a project by scope with a team and the number of hours allocated to it.",
+    text: "We implement a project by scope with a team and the number of hours allocated to the project.",
     image_url: "number3.svg",
     image_alt: "icon for direct placement",
   },
@@ -53,21 +53,17 @@ export default function CuttingEdge() {
   return (
     <section
       id="cuttingedge"
-      className={styles.cuttingedge + " full"}
-      style={{ color: "var(--primary-color)" }}
+      className={styles.cuttingedge + " full subgrid font-color_primary"}
     >
-      <div className={styles.angle}></div>
       <SectionHeader
         darker={true}
-        title="Cutting-edge digital solutions for your business"
-        subtitle=""
+        title="The Canadian digital marketing studio for talent from Latin America"
+        subtitle="We specialize in:"
       />
       <div className="content display-flex flex-justify-center flex-row font-color_secondary">
-        <p>We specialize in:</p>
-
         <div className={styles.specialize}>
-          {specialize.map((spec) => (
-            <div className={styles.spec}>
+          {specialize.map((spec, key) => (
+            <div key={key} className={styles.spec}>
               <img
                 src={spec.image_url}
                 alt={spec.image_alt}
@@ -88,8 +84,8 @@ export default function CuttingEdge() {
                   }}
                 />
                 <div>
-                  {spec.text.map((p) => (
-                    <p>{p}</p>
+                  {spec.text.map((p, key) => (
+                    <p key={key}>{p}</p>
                   ))}
                 </div>
               </div>
@@ -114,8 +110,8 @@ export default function CuttingEdge() {
             <p>At Studio DMLA, we have three models of work:</p>
           </div>
           <div className={styles.ways}>
-            {waystowork.map((way) => (
-              <div className={styles.way}>
+            {waystowork.map((way, key) => (
+              <div key={key} className={styles.way}>
                 <img
                   src={way.image_url}
                   loading="lazy"

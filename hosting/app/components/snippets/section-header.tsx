@@ -9,28 +9,20 @@ interface Props {
 
 export default function SectionHeader(props: Props) {
   const alt = 'decorative image for starting a segement';
+  const image = props.darker ? "/ruiten-darker.svg" : "/ruiten.svg";
+  const imageClasses = props.darker ? styles.ruitencolor + ' ' + styles.ruiten : styles.ruiten;
   return (
     <div className={styles.sectionHeaderContent + " feature"} >
-      {props.darker ?
        <img
-       className={styles.ruitencolor + styles.ruiten}
-       src="/ruiten-darker.svg"
+       className={imageClasses}
+       src={image}
        loading="lazy"
        alt={alt}
        style={{
          width: "10rem",
          height: "auto",
        }}
-     /> : <img
-        className={styles.ruiten}
-        src="/ruiten.svg"
-        loading="lazy"
-        alt={alt}
-        style={{
-          width: "10rem",
-          height: "auto",
-        }}
-      />}
+     />
       <h3 className={styles.title} style={{color: props.titleColor ? `var(--${props.titleColor})` : 'inherit'}}>{props.title} </h3>
       <p className={styles.subtitle}>{props.subtitle}</p>
     </div>

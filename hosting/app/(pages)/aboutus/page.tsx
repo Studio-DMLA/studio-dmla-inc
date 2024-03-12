@@ -75,7 +75,7 @@ export default function AboutUs() {
           />
           <h3>Our Team</h3>
         </div>
-        {founders.map(founder => (<FounderCard {...founder} />))}
+        {founders.map((founder, key) => (<FounderCard key={key} {...founder} />))}
         <IntervalBar />
         <div className={styles.ourassociates}>
           <img

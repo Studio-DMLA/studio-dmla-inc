@@ -4,6 +4,10 @@
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
     --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 95, 104;
+    --background-end-rgb: 0, 95, 104;
+    --menu-gradient-start: 35, 47, 50, 1;
+
     --primary-color: rgba(0, 95, 104, 1);
     --secondary-color: rgba(62, 152, 166, 1);
     --gray-dark-color: rgba(35, 47, 50, 1);
@@ -16,6 +20,15 @@
     --mute-color: rgba(111, 178, 188, 1);
 
     --gap: clamp(1rem, 6vw, 3rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 95, 104;
+    --background-end-rgb: 0, 95, 104;
+    --menu-gradient-start: 35, 47, 50, 1;
+  }
 }
 
 .font-color_white {
