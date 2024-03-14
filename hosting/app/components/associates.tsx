@@ -3,7 +3,7 @@ import styles from "./associates.module.css";
 import AssociateCard from "./cards/associate-card";
 
 const associates = associatesData;
-const associate = associates[3];
+const associate = associates[4];
 
 export default function Associates() {
   return (

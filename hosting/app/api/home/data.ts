@@ -36,10 +36,10 @@ export const associatesData = [
   {
     image: "AleFugita.png",
     imageAlt: "",
-    title: "",
-    subTitle: "",
-    description: "",
-    blurp: "",
+    title: "Alexandre Fugita",
+    subTitle: "Senior Website Developer",
+    description: "Fugita started learning to program when he was ten years old. Besides being a full-stack developer, he is an entrepreneur focusing on technology, web applications, apps for mobile (IOS and Android), e-commerce, and WordPress.",
+    blurp: "Working with Maria Paula is awesome! Her experience makes everything easier, and her expertise in leading people is something to admire. She handles complex problems like a breeze. I envy Maria's management skills!",
   },
   {
     image: "MarceloBorges.png",
@@ -91,8 +91,7 @@ export const aboutUsData = {
     title: 'We believe work should go beyond the industrial model',
     subtitle: [
       "At Studio DMLA, we do not do business as usual. We build a culture that empowers remote collaboration, autonomy, results, and a shared vision.",
-      "We are a B2B marketing agency, partnering with the best in each field from Latin America and locally to deliver cutting-edge digital solutions to North American organizations while being responsible for the strategy, project management, and final product.",
-      "Our digital boutique is an extension of our client’s teams, and we provide perspective and solutions for problems they did not know they had.",],
+      "We partner with the best in each field from Latin America and locally to deliver cutting-edge digital solutions to Canadian companies while being responsible for the strategy, project management, and final product.",],
     image_url: 'laptop-heart.svg',
     image_alt: 'Heart on a screen mac or on a computer',
     side_image_url: 'DMLA connecting the americas.svg',

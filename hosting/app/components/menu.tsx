@@ -73,11 +73,9 @@ export default function Menu() {
           href="contactus"
         />
         <MenuButton
-          startIcon={"search"}
-          endIcon={""}
-          text={"Search"}
-          role={"search our site"}
-          href="search"
+          text={"Book A Free Consultation"}
+          role={"Book A Free Consultation"}
+          href="bookaconsultation"
         />
       </nav>
     </div>

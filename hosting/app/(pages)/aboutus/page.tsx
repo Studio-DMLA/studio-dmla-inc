@@ -34,7 +34,7 @@ export default function AboutUs() {
             </h4>
             <p>
               Design state-of-the-art digital marketing solutions for North
-              American clients through B2B partnerships and remote collaboration
+              American clients through remote collaboration
               in Latin America and locally
             </p>
           </div>

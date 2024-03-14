@@ -18,7 +18,7 @@ export default function OurImpact() {
             height: "auto",
           }}
         />
-        <h3>We believe we can be the change we want to see in the world.</h3>
+        <h3>Sustainability starts from within</h3>
       </div>
       <div className={styles.mainContent + ' content subgrid'}>
         <p>
@@ -33,7 +33,7 @@ export default function OurImpact() {
           imageAlt="Joy-of-English Andrea Heald"
           title="The Joy of English: English for tech professionals"
           subtitle="Workshop led by Andrea Heald-Miller, M.Ed."
-          description="Our associates joined Andrea’s online lessons once a week over 10 weeks,  in addition to one-to-one sessions. Homework was assigned after each lesson and Andrea encouraged the team to take advantage of this extra material and time. Lessons comprised of both activities and lectures, covering the following subjects:"
+          description="Our associates joined Andrea’s online lessons once a week over 10 weeks,  in addition to one-to-one sessions. Homework was assigned after each lesson and Andrea encouraged the team to take advantage of this extra material and time. Lessons comprised of both activities and lectures."
           scroller="> Expanding vocabulary and building confidence in meetings and interviews
 > Developing clear and natural pronunciation
 > Delivering effective presentations
@@ -55,7 +55,7 @@ DMLA plans to offer this professional development opportunity every year to our 
           image="img_flowers_Support-Associates-Dreams_300x300px 1.png"
           imageAlt="flowers Support Associates Dreams"
           title="Supporting our associates’ dreams"
-          description="At Studio DMLA, we embrace a model of business which conciliates work with a fulfilling life. One of our goals is to offer sustainable collaboration conditions that support our associates to pursue their dreams. aLinda guided our associates in thinking about time as our most valuable resource and creating a vision to discover where the focus of our lives should be."
+          description="At Studio DMLA, we embrace a model of business which conciliates work with a fulfilling life. One of our goals is to offer a sustainable collaboration that support our associates to pursue their dreams. We also love being a part of our Associates special moments, by sending gifts in their birthdays and other important dates."
           scroller=""
           link=""
           imageRight={false}
