@@ -61,7 +61,7 @@
 }
 
 .way > :first-child {
-  grid-row: span 2 !important;
+  grid-row: span 2;
   justify-self: end;
   margin-right: 0.5rem;
 }
@@ -71,4 +71,41 @@
   padding-left: 0.5rem;
   left: -0.5rem;
   width: fit-content;
+}
+
+@media screen and (max-width: 1001px){
+
+  .specialize {
+    display: grid !important;
+    grid-template-columns: repeat(2, minMax(100px, 1fr));
+    gap: var(--gap);
+  }
+  .spec {
+    min-width: unset;
+  }
+  .bullet {
+    font-size: calc(0.55rem + 1vw );
+  }
+}
+
+@media screen and (max-width:850px){  
+  .ways > :first-child {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+
+@media screen and (max-width:500px){
+  .ways {
+    grid-template-columns: 1fr;
+  }
+  .ways > :first-child {
+    grid-column: span 1;
+  }
+  .spec > :first-child {
+    height: auto !important;
+    width: 100% !important;
+    max-width: 10rem;
+  }
+  
 }

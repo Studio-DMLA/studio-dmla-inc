@@ -18,8 +18,9 @@
   grid-column: span 2;
 }
 
-.subtitles {
+.subtitle {
   align-self: start;
+  grid-column: span 2;
 }
 .lightTitle{
   color: var(--primary-color) !important;
@@ -28,4 +29,23 @@
   filter: invert(25%) sepia(52%) saturate(1319%) hue-rotate(147deg) brightness(98%) contrast(103%);
   fill: var(--primary-color);
   color: var(--primary-color);
+}
+
+
+@media screen and (max-width: 1200px){
+  .sectionHeaderContent {
+    grid-template-columns: 7.5rem 1fr 10rem;
+  }
+  .ruiten {
+    width: 7.55rem !important;
+  }
+}
+@media screen and (max-width: 1001px){
+  .sectionHeaderContent {
+    grid-template-columns: 5rem 1fr 10rem;
+    column-gap: calc(var(--gap) / 2);
+  }
+  .ruiten {
+    width: 5rem !important;
+  }
 }

@@ -25,6 +25,10 @@
   .onecol {
     min-width: 1fr !important;
   }
+  .title {
+    font-size: calc(1.75rem - 1vw);
+  }
+
 }
 
 

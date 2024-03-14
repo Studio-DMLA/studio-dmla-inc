@@ -33,8 +33,8 @@ export default function ClientQoute(props: Quote) {
           }}
         />
       </div>
-      <div className={styles.quoteText}>
-        <div className="display-flex gap">
+      <div className={styles.quoteColumn}>
+        <div className={styles.quoteText}>
           <img
             className={styles.quoteMark1}
             src={"/quote mark.svg"}

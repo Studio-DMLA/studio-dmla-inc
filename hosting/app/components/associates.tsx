@@ -9,7 +9,7 @@ export default function Associates() {
   return (
     <div className={styles.associates}>
       <AssociateCard {...associate} />
-      <div className={styles.carrosal}>
+      <div style={{display: 'none'}} className={styles.carrosal}>
         {associates.map((associate, key) => (
           <div key={key} className={styles.select}>
             <img

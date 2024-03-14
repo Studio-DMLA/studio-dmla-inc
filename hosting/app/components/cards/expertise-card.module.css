@@ -10,8 +10,11 @@
   grid-area: 1 / 1;
 }
 
-.strokeImage {
-  position: relative;
+.stroke {
+  position: absolute;
+  border-top: 2px solid white;
+  width: 65vw;
+  max-width: 25rem;
   left: 5rem;
 }
 
@@ -48,14 +51,38 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   align-items: start;
-  margin-top: calc(var(--gap)/2);
+  margin-top: calc(var(--gap) / 2);
 }
 
 .subjectImage {
   position: relative;
   left: -1.5rem;
 }
-.subjectImage, .subjectTitle {
+.subjectImage,
+.subjectTitle {
   grid-area: 1 / 1;
 }
 
+@media screen and (max-width: 1001px) {
+  .image > :last-child {
+    width: 100% !important;
+  }
+
+  .card {
+    grid-template-columns: 16vw 1fr;
+  }
+  .h5 {
+    font-size: calc(0.28em + 1vw);
+  }
+
+  .plusImage {
+    top: 15vw;
+    height: 0.75rem !important;
+  }
+
+  .stroke {
+    border-top: 1px solid white;
+    width: 50vw;
+    left: 8vw;
+  }
+}

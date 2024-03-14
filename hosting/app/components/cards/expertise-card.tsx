@@ -20,16 +20,7 @@ export default function ExpertiseCard(props: Props) {
       <div className={styles.offset} id={props.id}></div>
       <div className={styles.image_container}>
         <div className={styles.image}>
-          <img
-            className={styles.strokeImage}
-            src={"/stroke-vector.svg"}
-            loading="lazy"
-            alt="decorative vector of a stroked vector"
-            style={{
-              width: "auto",
-              height: ".2rem",
-            }}
-          />
+          <div className={styles.stroke}></div>
           <img
             className={styles.plusImage}
             src={"/plus-art.svg"}
@@ -50,7 +41,7 @@ export default function ExpertiseCard(props: Props) {
             }}
           />
         </div>
-        <h5 className="font-color_primary">{props.image_subtitle}</h5>
+        <h5 className={styles.h5 + " font-color_primary"}>{props.image_subtitle}</h5>
       </div>
       <div className={styles.text}>
         {props.subjects.map((subject, key) => (

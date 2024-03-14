@@ -21,7 +21,6 @@
 
 .blurp,
 .about {
-  max-height: 16rem;
   overflow: scroll;
 }
 .about > h3 {
@@ -58,3 +57,20 @@
     clip-path: circle(50% at 50% 50%);
   }
 
+
+  @media screen and (max-width: 1001px){
+    .selected {
+      grid-template-columns: 1fr 16rem;
+    }
+    .blurp {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 575px){
+    .selected {
+      grid-template-columns: 1fr;
+    }
+    .blurp {
+      display: none;
+    }
+  }

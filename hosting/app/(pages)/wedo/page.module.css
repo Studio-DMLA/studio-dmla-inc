@@ -26,3 +26,14 @@
   gap: calc(var(--gap)/2);
   grid-column: span 3;
 }
+@media screen and (max-width: 1001px) {
+  .letsGetStarted {
+    column-gap: calc(var(--gap) /2);
+  }
+}
+@media screen and (max-width: 600px) {
+  .letsGetStarted {
+    display: flex;
+    flex-direction: column;
+  }
+}

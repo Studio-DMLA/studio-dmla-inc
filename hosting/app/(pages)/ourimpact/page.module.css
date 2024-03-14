@@ -23,3 +23,16 @@
 .mainContent > :first-child {
   margin-bottom: calc(var(--gap) / 2);
 }
+@media screen and (max-width: 1001px){
+  .globeHeadline {
+    margin-top: 0.5rem;
+  }
+.globeHeadline > img {
+  display: block;
+  width: 100%;
+  max-width: 16vw;
+}
+.globeHeadline > h3 {
+  font-size: calc(1.8rem + 1vw);
+}
+}

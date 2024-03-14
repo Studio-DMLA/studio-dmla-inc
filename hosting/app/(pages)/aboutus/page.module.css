@@ -62,3 +62,10 @@
   font-size: xx-large;
   font-weight: 300;
 }
+
+@media screen and (max-width: 768px) {
+  
+.ourassociates > h3 {
+  font-size: x-large;
+}
+}

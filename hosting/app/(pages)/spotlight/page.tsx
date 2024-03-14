@@ -100,7 +100,7 @@ export default function Spotlight() {
         <ClientQuotes title={"Hear from our clients"} quotes={[{
           quote: "Huge congratulations to Maria Paula Murad and the whole DMLA team! I am so happy to see that the team keeps on growing and flourishing! Working with MP in the past has always been such a great, pleasant, and fun experience, and I am sure she has built that same work culture with Studio DMLA.",
           name: "Redge Quedit",
-          sub_text: "Test Centre Manager at Global Village Test Centre",
+          sub_text: "Manager, Administration at Global Village Test Centre",
           image_alt: "Redge Quedit from Global Village Test Centre",
           image_url: "redge quedit from global village.png",
         }]} />
