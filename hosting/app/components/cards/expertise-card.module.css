@@ -28,6 +28,12 @@
   display: grid;
   grid-template-columns: 10rem 1fr;
   gap: calc(var(--gap));
+  position: relative;
+}
+
+.offset {
+  position: absolute;
+  top: -7rem;
 }
 
 .topMargin {

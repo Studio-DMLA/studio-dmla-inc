@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import styles from "./menu.module.css";
 import MenuButton from "./menuButton";
 
@@ -51,7 +50,7 @@ export default function Menu() {
           }}
         />
 
-        <MenuButton text={"Home"} role={"go home button"} href="/" />
+        <MenuButton text={"Home"} role={"go home button"} href="home" />
         <MenuButton
           text={"About Us"}
           role={"go to we do section"}

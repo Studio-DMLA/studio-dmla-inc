@@ -1,6 +1,7 @@
 import styles from "./expertise-card.module.css";
 
 interface Props {
+  id: string;
   image: string;
   imageAlt: string;
   image_subtitle: string;
@@ -15,7 +16,8 @@ interface SubjectsArrayItem {
 
 export default function ExpertiseCard(props: Props) {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} >
+      <div className={styles.offset} id={props.id}></div>
       <div className={styles.image_container}>
         <div className={styles.image}>
           <img

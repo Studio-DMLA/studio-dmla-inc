@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SectionHeader from "../../components/snippets/section-header";
 import styles from "./page.module.css";
 
@@ -6,25 +7,25 @@ const specialize = [
     image_url: "web-mobile_cutting-edge.svg",
     image_alt: "Specialize in web development and mobile browsers",
     text: ["Web Development", "Design & Maintenance"],
-    link: "",
+    link: 'web-dev-design',
   },
   {
     image_url: "technical seo.svg",
     image_alt: "Specialize in web development and mobile browsers",
     text: ["Technical SEO (Search", "Engine Optimization)"],
-    link: "",
+    link: 'technical-seo',
   },
   {
     image_url: "drawing tablet.svg",
     image_alt: "Specialize in web development and mobile browsers",
     text: ["Digital &", "Graphic Design"],
-    link: "",
+    link: 'digital-graphic-design',
   },
   {
     image_url: "3d on laptop.svg",
     image_alt: "Specialize in web development and mobile browsers",
     text: ["3D Rendering"],
-    link: "",
+    link: '3d-rendering',
   },
 ];
 
@@ -63,7 +64,7 @@ export default function CuttingEdge() {
       <div className="content display-flex flex-justify-center flex-row font-color_secondary">
         <div className={styles.specialize}>
           {specialize.map((spec, key) => (
-            <div key={key} className={styles.spec}>
+            <a href={'#' +spec.link} key={key} className={styles.spec}>
               <img
                 src={spec.image_url}
                 alt={spec.image_alt}
@@ -89,7 +90,7 @@ export default function CuttingEdge() {
                   ))}
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
         <div className={styles.waystowork}>
@@ -129,6 +130,7 @@ export default function CuttingEdge() {
             ))}
           </div>
         </div>
+      <a href="#bookaconsultation">Book A Free Consultation</a>
       </div>
     </section>
   );

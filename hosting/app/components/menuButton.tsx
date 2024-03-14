@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styles from "./menuButton.module.css";
 
 export default function MenuButton(props: {
@@ -15,7 +14,7 @@ export default function MenuButton(props: {
     href: "#" + props.href,
   };
   return (
-    <Link href={props.href} className={styles.navButton}>
+    <a href={'#' + props.href} className={styles.navButton}>
       {props.startIcon ? (
         <span className={styles.navPreIcon}>
           <img className="icon" loading="lazy" alt="menu" {...attriPreIcon} />
@@ -23,6 +22,6 @@ export default function MenuButton(props: {
       ) : null}
       <span className={styles.text}>{props.text}</span>
       <span className={styles.line45}></span>
-    </Link>
+    </a>
   );
 }

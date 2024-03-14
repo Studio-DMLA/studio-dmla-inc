@@ -218,3 +218,7 @@ a {
   position: relative;
   transform: rotate(180deg);
 }
+
+.block {
+  display: block;
+}

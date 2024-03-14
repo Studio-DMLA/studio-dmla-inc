@@ -23,14 +23,14 @@ export default function Spotlight() {
           image_alt="laptop with a star icon"
         />
         <SpotlightCard
-          title="Placement of developers"
+          title="Placement of Developers"
           logoAlt="Logo of bunking"
           logoImage="BunkingLogog.svg"
           image="Macbook Portfolio Screens.png"
           imageAlt="Macbook Portfolio Screens with the bunking project on screen"
           imageRight={false}
           description={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "In the past two years, we have placed software developers professionals with this client: https://bunking.com/, who helped to develop the platform, including a Content Management System, from scratch. The technical requirements included experience and proficiency with React, Node, and MongoDB. The outcome was speeding up the code production to support the client’s investment plan."
           }
           link=""
         />
@@ -43,39 +43,39 @@ export default function Spotlight() {
           imageAlt="Macbook Portfolio Screens with the bunking project on screen"
           imageRight={true}
           description={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "The main goal was to enhance the customer experience on the website, besides modernizing our client’s online presence during the pandemic period. The challenge was the large amount of information as well as the design of the new website from scratch, in addition to the implementation of the development tasks of a technical SEO audit to improve the performance on search engines. After the development, we started with website maintenance activities: updating the WordPress system, plugins, and theme in addition to new developments; and providing a monthly report on maintenance activities."
           }
           link=""
         />
         <IntervalBar />
         <SpotlightCard
-          title="Placement of developers"
+          title="Web Development & Maintenance"
           logoAlt="Logo of bunking"
           logoImage="IELTS-logo.png"
           image="Macbook Portfolio Screens - ielts.png"
           imageAlt="Macbook Portfolio Screens with the bunking project on screen"
           imageRight={false}
           description={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "The most important outcome was the design of the first website (gvenglish), which created a benchmark for the subdomain website (ielts.gvenglish). After the development, we started with website maintenance activities: updating the WordPress system, plugins, and theme in addition to new developments; and providing a monthly report on maintenance activities."
           }
           link=""
         />
         <IntervalBar />
         <SpotlightCard
-          title="Web Development, Maintenance & Technical SEO"
+          title="Web Migration, Development & Maintenance"
           logoAlt="Logo of bunking"
           logoImage="gateway logo.png"
           image="Macbook Portfolio Screens - gateway.png"
           imageAlt="Macbook Portfolio Screens with the bunking project on screen"
           imageRight={true}
           description={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "Since the gatewaypm.com website has e-commerce, and new transactions can happen anytime, we needed a way to ensure the same database would be serving the old webserver (Rentsync) and the new one (FlyWheel). The coding happened in the development environment: updating plugins, coding, and testing. When a version was ready to test, we deployed it to the staging environment where everyone could try it. We had feedback and adjustment cycles in this phase until everything was ready for production. After the migration was completed, we started with gatewaypm.com maintenance activities: updating the WP system, plugins, and theme; and a monthly report on maintenance activities."
           }
           link=""
         />
         <IntervalBar />
         <SpotlightCard
-          title="Web Development, Maintenance & Technical SEO"
+          title="Newsletter template"
           logoAlt="Logo of bunking"
           logoImage="logoSLD.png"
           image="Macbook Portfolio Screens - SLD.png"

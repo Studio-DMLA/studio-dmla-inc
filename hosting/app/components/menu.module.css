@@ -28,7 +28,6 @@
   display: grid;
   gap: calc(var(--gap) / 2);
   grid-auto-flow: column;
-  grid-template-columns: 5rem 1fr 5rem;
   align-items: end;
 }
 .searchIcon {
