@@ -15,26 +15,32 @@
   align-content: end;
 }
 
-.menuBar.hide-on-mobile {
+.menuBar {
   position: relative;
   display: grid;
-  grid-auto-flow: column;
-  gap: 32px;
   align-items: baseline;
-  grid-template-columns: repeat(auto, 1fr);
-}
-
-.menuBar {
-  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  max-width: 95vw;
+  grid-auto-flow: dense;
   gap: calc(var(--gap) / 2);
-  grid-auto-flow: column;
-  align-items: end;
 }
 .searchIcon {
   justify-self: end;
 }
 .brandImage {
   justify-self: center;
+}
+
+.mobileNav {
+  padding-top: 7.5rem;
+  display: grid;
+  width: 100vw;
+  gap: var(--gap);
+  position: fixed;
+  height: 100vh;
+  background-color: var(--primary-color);
+  z-index: 999;
+  align-items: center;
 }
 
 .nav-underline {
@@ -44,4 +50,33 @@
   left: 2rem;
   position: relative;
   top: 0.2em;
+}
+.mobileMenu {
+  position: absolute;
+  top: 0.25rem;
+}
+.close {
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+
+}
+@media screen and (max-width: 700px) {
+  .menuBar {
+    display: block;
+    position: relative;
+    grid-template-columns: none;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .menuBar {
+    display: grid;
+    gap: calc(var(--gap) / 4);
+  }
+  .brandImage {
+    width: 4.5rem !important;
+  }
+  .menuBar > a {
+    font-size: smaller;
+  }
 }

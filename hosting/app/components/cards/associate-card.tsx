@@ -18,8 +18,8 @@ export default function AssociateCard(props: Props) {
       <div className={styles.about}>
         <h3>{props.title}</h3>
         <h4>{props.subTitle}</h4>
-      <ScrollingP p={props.description} />
-        </div>
+        <ScrollingP p={props.description} />
+      </div>
       <div className={styles.image}>
         <img
           src={"/" + props.image}
@@ -31,16 +31,15 @@ export default function AssociateCard(props: Props) {
           }}
         />
         <div className={styles.location}>
-        <img
-          src={"/flag-brazil.svg"}
-          alt={"location Brazil flag icon image"}
-          loading="lazy"
-          style={{
-            width: "auto",
-            height: "5rem",
-          }}
-        />
-
+          <img
+            src={"/flag-brazil.svg"}
+            alt={"location Brazil flag icon image"}
+            loading="lazy"
+            style={{
+              width: "auto",
+              height: "5rem",
+            }}
+          />
         </div>
       </div>
       <div className={styles.blurp}>
@@ -53,7 +52,7 @@ export default function AssociateCard(props: Props) {
             height: "15rem",
           }}
         />
-      <ScrollingP p={props.blurp} />
+        <ScrollingP p={props.blurp} />
       </div>
     </div>
   );

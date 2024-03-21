@@ -1,83 +1,30 @@
+import { menuItems } from "../api/home/menu";
 import styles from "./menu.module.css";
 import MenuButton from "./menuButton";
+import MenuMobile from "./menuMobile";
 
 export default function Menu() {
-  return (
-    <div className={styles.navGradient + ' full'}>
-      <nav
-        className={styles.menuBar + " hide-on-desktop hide-on-tablet"}
-        style={{ width: "21.875rem" }}
-      >
-        <img
-          src="/DMLA-menu.svg"
-          loading="lazy"
-          alt="menu"
-          style={{
-            width: "2.5rem",
-            height: "auto",
-          }}
-        />
-        <img
-          className={styles.brandImage}
-          src="/Studio DMLA brand.svg"
-          loading="lazy"
-          alt="menu"
-          style={{
-            width: "6.25rem",
-            height: "auto",
-          }}
-        />
-        <img
-          className={styles.searchIcon}
-          src="/Button - SEARCH mobile.svg"
-          loading="lazy"
-          alt="menu"
-          style={{
-            width: "2.5rem",
-            height: "auto",
-          }}
-        />
-      </nav>
-      <nav className={styles.menuBar + " hide-on-mobile"}>
-        <img
-          className={styles.brandImage}
-          src="/Studio DMLA brand.svg"
-          loading="lazy"
-          alt="menu"
-          style={{
-            width: "6.25rem",
-            height: "auto",
-          }}
-        />
 
-        <MenuButton text={"Home"} role={"go home button"} href="home" />
-        <MenuButton
-          text={"About Us"}
-          role={"go to we do section"}
-          href="aboutus"
-        />
-        <MenuButton text={"We Do"} role={"go to we do section"} href="wedo" />
-        <MenuButton
-          text={"Spotlight"}
-          role={"go to spotlight section"}
-          href="spotlight"
-        />
-        <MenuButton
-          text={"Our Impact"}
-          role={"go to our impact section"}
-          href="ourimpact"
-        />
-        <MenuButton
-          text={"Contact"}
-          role={"go to contact us section"}
-          href="contactus"
-        />
-        <MenuButton
-          text={"Book A Free Consultation"}
-          role={"Book A Free Consultation"}
-          href="bookaconsultation"
-        />
-      </nav>
-    </div>
+  return (
+    <>
+      <div className={styles.navGradient + " full hide-on-mobile"}>
+        <nav className={styles.menuBar}>
+          <img
+            className={styles.brandImage}
+            src="/Studio DMLA brand.svg"
+            loading="lazy"
+            alt="menu"
+            style={{
+              width: "4.25rem",
+              height: "auto",
+            }}
+          />
+          {menuItems.map((item, key) => (
+            <MenuButton key={key} {...item} />
+          ))}
+        </nav>
+      </div>
+      <MenuMobile />
+    </>
   );
 }

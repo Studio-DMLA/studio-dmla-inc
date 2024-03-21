@@ -13,13 +13,12 @@ export default function MenuButton(props: {
   const attriA = {
     href: "#" + props.href,
   };
-  return (
-    <a href={'#' + props.href} className={styles.navButton}>
-      {props.startIcon ? (
+  return (<a href={'#' + props.href} className={styles.navButton}>
+      {props.startIcon ? 
         <span className={styles.navPreIcon}>
           <img className="icon" loading="lazy" alt="menu" {...attriPreIcon} />
         </span>
-      ) : null}
+       : null}
       <span className={styles.text}>{props.text}</span>
       <span className={styles.line45}></span>
     </a>
