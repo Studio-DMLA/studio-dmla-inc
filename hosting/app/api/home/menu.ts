@@ -1,5 +1,3 @@
-import { signal } from "@preact/signals-react";
-
 export const menuItems = [
   {
     text: "Home",

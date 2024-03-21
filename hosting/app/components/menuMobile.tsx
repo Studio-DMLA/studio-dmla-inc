@@ -8,9 +8,9 @@ export default function MenuMobile() {
   const [toggle, setToggle] = useState(false); 
   return (
     <>
-      <div className={styles.navGradient + " full"}>
+      <div className={styles.navGradient + " full hide-on-desktop hide-on-tablet"}>
         <nav
-          className={styles.menuBar + " hide-on-desktop hide-on-tablet"}
+          className={styles.menuBar}
           style={{ width: "21.875rem" }}
         >
           <img
