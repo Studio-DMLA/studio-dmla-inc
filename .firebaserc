@@ -1,6 +1,7 @@
 {
   "projects": {
-    "default": "studio-dmla-dev"
+    "default": "studio-dmla-dev",
+    "production": "studio-dmla"
   },
   "targets": {},
   "etags": {
