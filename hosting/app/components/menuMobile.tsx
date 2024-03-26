@@ -5,36 +5,35 @@ import { menuItems } from "../api/home/menu";
 import { useState } from "react";
 
 export default function MenuMobile() {
-  const [toggle, setToggle] = useState(false); 
+  const [toggle, setToggle] = useState(false);
   return (
     <>
-      <div className={styles.navGradient + " full hide-on-desktop hide-on-tablet"}>
-        <nav
-          className={styles.menuBar}
-          style={{ width: "21.875rem" }}
-        >
+      <div
+        className={styles.navGradient + " full hide-on-desktop hide-on-tablet"}
+      >
+        <nav className={styles.menuBar} style={{ width: "21.875rem" }}>
           <img
-           onClick={() => setToggle(!toggle)}
+            onClick={() => setToggle(!toggle)}
             className={styles.mobileMenu}
             src="/DMLA-menu.svg"
             loading="lazy"
             alt="menu"
             style={{
               width: "2.5rem",
-              height: "auto"
-            }}
-          />
-
-          <img
-            className={styles.brandImage}
-            src="/Studio DMLA brand.svg"
-            loading="lazy"
-            alt="menu"
-            style={{
-              width: "4.25rem",
               height: "auto",
             }}
           />
+          <a href="/" className={styles.brandImage}>
+            <img
+              src="/Studio DMLA brand.svg"
+              loading="lazy"
+              alt="menu"
+              style={{
+                width: "4.25rem",
+                height: "auto",
+              }}
+            />
+          </a>
         </nav>
       </div>
       <div
@@ -42,10 +41,16 @@ export default function MenuMobile() {
         className={styles.mobileNav + " hide-on-desktop hide-on-tablet"}
         style={{ display: toggle ? "grid" : "none" }}
       >
-        <div className={styles.close} 
-           onClick={() => setToggle(!toggle)}>X </div>
+        <div className={styles.close} onClick={() => setToggle(!toggle)}>
+          X{" "}
+        </div>
         {menuItems.map((item, key) => (
-          <MenuButtonMobile key={key} {...item} toggle={toggle} setToggle={setToggle} />
+          <MenuButtonMobile
+            key={key}
+            {...item}
+            toggle={toggle}
+            setToggle={setToggle}
+          />
         ))}
       </div>
     </>
@@ -59,7 +64,7 @@ export function MenuButtonMobile(props: {
   role: string;
   href: string;
   toggle: boolean;
-  setToggle: any
+  setToggle: any;
 }) {
   const attriPreIcon = {
     src: "/" + props.startIcon + ".svg",

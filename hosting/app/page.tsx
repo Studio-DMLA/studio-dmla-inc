@@ -12,7 +12,8 @@ import Wedo from "./(pages)/wedo/page";
 export default function Home() {
   return (
     <main className="content">
-      <div id="home" className={styles.main + " feature"}>
+      <div className={styles.main + " feature"}>
+        <span id="home" className={styles.sectionId}></span>
         <HeroDesktop />
         <HeroMobile />
         <HeroTablet />

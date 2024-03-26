@@ -53,10 +53,10 @@ const waystowork = [
 export default function CuttingEdge() {
   return (
     <section
-      id="cuttingedge"
       className={styles.cuttingedge + " full subgrid font-color_primary"}
     >
       <SectionHeader
+      id="cuttingedge"
         darker={true}
         title="The Canadian digital marketing studio for talent from Latin America"
         subtitle="We specialize in:"

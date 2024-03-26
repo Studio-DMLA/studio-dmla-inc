@@ -5,3 +5,8 @@
 .hero > h3 {
   display: none;
 }
+@media screen and (max-width: 550px) {
+  .hero {
+    min-height: 20px;
+  }
+}

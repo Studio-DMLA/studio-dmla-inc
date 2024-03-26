@@ -123,10 +123,10 @@ const p = {
 export default function Wedo() {
   return (
     <section
-      id={p.sectionId}
       className={styles.wedo + " full subgrid font-color_primary"}
     >
-      <SectionHeader {...p.sectionHeader} />
+      <SectionHeader
+      id={p.sectionId} {...p.sectionHeader} />
       <div className="content display-flex flex-justify-center flex-row font-color_white">
         <CalloutTitle {...p.callOutTitle} />
         <div className="display-flex flex-align-center gap">

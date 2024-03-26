@@ -4,8 +4,8 @@ import styles from "./page.module.css";
 
 export default function OurImpact() {
   return (
-    <section id="ourimpact" className={styles.ourimpact + " full subgrid"}>
-      <SectionHeader darker={true} title="OUR IMPACT" subtitle="" />
+    <section className={styles.ourimpact + " full subgrid"}>
+      <SectionHeader id="ourimpact" darker={true} title="OUR IMPACT" subtitle="" />
       
       <div className={styles.globeHeadline + ' popout subgrid'}>
         <img

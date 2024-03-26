@@ -8,10 +8,10 @@ import styles from "./page.module.css";
 export default function Spotlight() {
   return (
     <section
-      id="spotlight"
       className={styles.spotlightContainer + " full subgrid"}
     >
-      <SectionHeader title="PROJECT SPOTLIGHT" subtitle="" titleColor="secondary-color"/>
+      <SectionHeader 
+      id="spotlight" title="PROJECT SPOTLIGHT" subtitle="" titleColor="secondary-color"/>
       <div className="content display-flex flex-justify-center flex-row font-color_gray-medium">
         <CalloutTitle
           title={"Check out some of our recent projects:"}
@@ -32,12 +32,12 @@ export default function Spotlight() {
           description={
             "In the past two years, we have placed software developers professionals with this client: https://bunking.com/, who helped to develop the platform, including a Content Management System, from scratch. The technical requirements included experience and proficiency with React, Node, and MongoDB. The outcome was speeding up the code production to support the client’s investment plan."
           }
-          link=""
+          link="https://bunking.com"
         />
         <IntervalBar />
         <SpotlightCard
           title="Web Development, Maintenance & Technical SEO"
-          logoAlt="Logo of bunking"
+          logoAlt="Global Village website"
           logoImage="LogoGlobalVillage.png"
           image="Macbook Portfolio Screens Global Village.png"
           imageAlt="Macbook Portfolio Screens with the bunking project on screen"
@@ -45,12 +45,12 @@ export default function Spotlight() {
           description={
             "The main goal was to enhance the customer experience on the website, besides modernizing our client’s online presence during the pandemic period. The challenge was the large amount of information as well as the design of the new website from scratch, in addition to the implementation of the development tasks of a technical SEO audit to improve the performance on search engines. After the development, we started with website maintenance activities: updating the WordPress system, plugins, and theme in addition to new developments; and providing a monthly report on maintenance activities."
           }
-          link=""
+          link="https://gvenglish.com"
         />
         <IntervalBar />
         <SpotlightCard
           title="Web Development & Maintenance"
-          logoAlt="Logo of bunking"
+          logoAlt="Ielts test center"
           logoImage="IELTS-logo.png"
           image="Macbook Portfolio Screens - ielts.png"
           imageAlt="Macbook Portfolio Screens with the bunking project on screen"
@@ -58,12 +58,12 @@ export default function Spotlight() {
           description={
             "The most important outcome was the design of the first website (gvenglish), which created a benchmark for the subdomain website (ielts.gvenglish). After the development, we started with website maintenance activities: updating the WordPress system, plugins, and theme in addition to new developments; and providing a monthly report on maintenance activities."
           }
-          link=""
+          link="https://ielts.gvenglish.com/"
         />
         <IntervalBar />
         <SpotlightCard
           title="Web Migration, Development & Maintenance"
-          logoAlt="Logo of bunking"
+          logoAlt="Gateway site from tribe"
           logoImage="gateway logo.png"
           image="Macbook Portfolio Screens - gateway.png"
           imageAlt="Macbook Portfolio Screens with the bunking project on screen"
@@ -71,7 +71,7 @@ export default function Spotlight() {
           description={
             "Since the gatewaypm.com website has e-commerce, and new transactions can happen anytime, we needed a way to ensure the same database would be serving the old webserver (Rentsync) and the new one (FlyWheel). The coding happened in the development environment: updating plugins, coding, and testing. When a version was ready to test, we deployed it to the staging environment where everyone could try it. We had feedback and adjustment cycles in this phase until everything was ready for production. After the migration was completed, we started with gatewaypm.com maintenance activities: updating the WP system, plugins, and theme; and a monthly report on maintenance activities."
           }
-          link=""
+          link="https://www.gatewaypm.com/"
         />
         <IntervalBar />
         <SpotlightCard
@@ -84,7 +84,6 @@ export default function Spotlight() {
           description={
             "A newsletter template that gives autonomy to the client to develop the content in an organized way, maintaining the company's visual identity without using professional design tools."
           }
-          link=""
         />
         
         <img

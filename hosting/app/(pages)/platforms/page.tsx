@@ -5,19 +5,29 @@ import styles from "./page.module.css";
 
 export default function Platforms() {
   return (
-    <section id="platforms" className={styles.platformsContainer + " full subgrid"}>
-      <SectionHeader title="Platforms We Use" subtitle="At Studio DMLA, we keep up with the latest trends in technology to serve our associates and clients well. Here are some of the platforms we use:" />
+    <section
+      className={styles.platformsContainer + " full subgrid"}
+    >
+      <SectionHeader
+      id="platforms"
+        title="Platforms We Use"
+        subtitle="At Studio DMLA, we keep up with the latest trends in technology to serve our associates and clients well. Here are some of the platforms we use:"
+      />
 
-      <div className="content display-flex gap flex-justify-center">
-      
-        <Platform image="/1password-logo.svg" alt="" reason="security" />
-        <Platform image="/clockify-logo.svg" alt="" reason="time tracker" />
+      <div
+        className={
+          styles.platformList + " content"
+        }
+      >
+        <Platform image="/1password-logo.svg" alt="1password for password management" reason="security" link="https://1password.com" />
+        <Platform image="/clockify-logo.svg" alt="clockify for time tracking" reason="time tracker" link="https://clockify.me" />
         <Platform
           image="/google-workspace-logo.svg"
-          alt=""
+          alt="Google workspace"
           reason="collaborative"
+          link="https://workspace.google.com/lp/business/"
         />
-        <Platform image="/hubspot-logo.svg" alt="" reason="CRM" />
+        <Platform image="/hubspot-logo.svg" alt="Leads management tool, hubspot" reason="CRM" link="https://www.hubspot.com"/>
       </div>
       <IntervalBar />
     </section>

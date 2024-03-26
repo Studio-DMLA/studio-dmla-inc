@@ -10,9 +10,8 @@ export default function AboutUs() {
   const page = aboutUsData
   const founders = foundersData;
   return (
-    <section id={page.id} className={styles.aboutus + " full"}>
-      <div className={styles.angle}></div>
-      <SectionHeader {...page.sectionHeader} />
+    <section className={styles.aboutus + " full"}>
+      <SectionHeader id={page.id} {...page.sectionHeader} />
       <div className="content display-flex flex-justify-center flex-row font-color_mute">
         <CalloutTitle
           {...page.calloutTitle}

@@ -10,10 +10,12 @@
 .card > div {
   flex: 1 1;
 }
-
 @media screen and (max-width: 707px) {
+  .card > .image {
+    margin-left: 2rem;
+  }
   .card.activityCardRight {
-    justify-content: flex-end;
+    flex-direction: row !important;
   }
 }
 

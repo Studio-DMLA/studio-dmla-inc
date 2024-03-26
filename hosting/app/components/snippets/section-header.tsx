@@ -1,6 +1,7 @@
 import styles from "./section-header.module.css";
 
 interface Props {
+  id: string;
   title: string;
   subtitle: string;
   darker?: boolean;
@@ -12,6 +13,8 @@ export default function SectionHeader(props: Props) {
   const image = props.darker ? "/ruiten-darker.svg" : "/ruiten.svg";
   const imageClasses = props.darker ? styles.ruitencolor + ' ' + styles.ruiten : styles.ruiten;
   return (
+    <>  
+    <span id={props.id} className={styles.sectionId}></span>
     <div className={styles.sectionHeaderContent + " feature"} >
        <img
        className={imageClasses}
@@ -26,5 +29,6 @@ export default function SectionHeader(props: Props) {
       <h3 className={styles.title} style={{color: props.titleColor ? `var(--${props.titleColor})` : 'inherit'}}>{props.title} </h3>
       <p className={styles.subtitle}>{props.subtitle}</p>
     </div>
+    </>
   );
 }

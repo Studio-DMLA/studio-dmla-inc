@@ -3,3 +3,8 @@
   display: grid;
   margin-top: 4rem;
 }
+
+.sectionId {
+  position: relative;
+  top: -10rem;
+}

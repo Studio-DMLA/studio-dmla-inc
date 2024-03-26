@@ -6,6 +6,25 @@
 }
 
 .platforms {
+  display: flex;  
+}
+
+.platformList {
   display: flex;
-  
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: calc(var(--gap) /2);
+}
+
+
+@media screen and (max-width: 1001px) {
+  .platformList {
+    padding-top: 2rem;
+  }
+}
+@media screen and (max-width: 551px) {
+  .platformList {
+    padding-top: 4rem;
+  }
 }

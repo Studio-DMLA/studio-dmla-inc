@@ -3,9 +3,10 @@
   grid-template-columns: 10rem 1fr 10rem;
   grid-template-rows: 58% 1fr;
   column-gap: var(--gap);
+  min-height: max-content;
 }
 .headerContentText {
-  position: relative;             
+  position: relative;
   display: grid;
 }
 .ruiten {
@@ -22,17 +23,22 @@
   align-self: start;
   grid-column: span 2;
 }
-.lightTitle{
+.lightTitle {
   color: var(--primary-color) !important;
 }
 .ruitenDarker {
-  filter: invert(25%) sepia(52%) saturate(1319%) hue-rotate(147deg) brightness(98%) contrast(103%);
+  filter: invert(25%) sepia(52%) saturate(1319%) hue-rotate(147deg)
+    brightness(98%) contrast(103%);
   fill: var(--primary-color);
   color: var(--primary-color);
 }
 
+.sectionId {
+  position: relative;
+  top: -7rem;
+}
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
   .sectionHeaderContent {
     grid-template-columns: 7.5rem 1fr 10rem;
   }
@@ -40,12 +46,23 @@
     width: 7.55rem !important;
   }
 }
-@media screen and (max-width: 1001px){
+@media screen and (max-width: 1001px) {
   .sectionHeaderContent {
     grid-template-columns: 5rem 1fr 10rem;
     column-gap: calc(var(--gap) / 2);
   }
   .ruiten {
     width: 5rem !important;
+  }
+}
+@media screen and (max-width: 551px) {
+  .sectionHeaderContent {
+    grid-template-columns: 2.5rem 1fr 10rem;
+    column-gap: calc(var(--gap) / 2);
+    grid-template-rows: auto;
+    padding-bottom: calc(var(--gap) / 2);
+  }
+  .ruiten {
+    width: 2.5rem !important;
   }
 }

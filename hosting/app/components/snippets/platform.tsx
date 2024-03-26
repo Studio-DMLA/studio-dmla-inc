@@ -1,22 +1,24 @@
 import styles from "./platform.module.css";
-import PlatformReason from "./platformReason";
 
 interface Props {
   image: string;
   alt: string;
   reason: string;
+  link: string;
 }
 
 export default function Platform(props: Props) {
   return (
-    <div className={styles.platform}>
+    <a className={styles.platform} href={props.link} target="_blank">
       <img
         className={styles.platformLogo}
         src={props.image}
         loading="lazy"
         alt={props.alt}
       />
-      <PlatformReason text={props.reason} />
-    </div>
+      
+      <span className={styles.platformReason}>{props.reason}</span>
+
+    </a>
   );
 }

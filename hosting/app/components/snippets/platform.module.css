@@ -1,7 +1,14 @@
 .platform {
   display: grid;
+  
+  align-items: end;
+  justify-items: center;
+  justify-content: space-around;
 }
 
 .platformLogo {
   display: block;
+}
+.platformReason {
+  display: inline-block;
 }

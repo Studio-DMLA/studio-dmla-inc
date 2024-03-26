@@ -9,6 +9,7 @@ export default function Menu() {
     <>
       <div className={styles.navGradient + " full hide-on-mobile"}>
         <nav className={styles.menuBar}>
+          <a href="/">
           <img
             className={styles.brandImage}
             src="/Studio DMLA brand.svg"
@@ -18,7 +19,7 @@ export default function Menu() {
               width: "4.25rem",
               height: "auto",
             }}
-          />
+          /></a>
           {menuItems.map((item, key) => (
             <MenuButton key={key} {...item} />
           ))}

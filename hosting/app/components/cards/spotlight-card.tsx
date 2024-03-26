@@ -14,8 +14,8 @@ interface Props {
 
 export default function SpotlightCard(props: Props) {
   const card = props.imageRight
-  ? `${styles.card} ${styles.activityCardRight}`
-  : `${styles.card}`;
+    ? `${styles.card} ${styles.activityCardRight}`
+    : `${styles.card}`;
   return (
     <div className={card}>
       <div className={styles.image}>
@@ -36,7 +36,7 @@ export default function SpotlightCard(props: Props) {
         <div className={props.imageRight ? styles.logoRight : styles.logoLeft}>
           <img
             className={styles.cornerPoint}
-            src={'/' + props.logoImage}
+            src={"/" + props.logoImage}
             loading="lazy"
             alt={props.logoAlt}
             style={{
@@ -44,14 +44,17 @@ export default function SpotlightCard(props: Props) {
               height: "2.65rem",
             }}
           />
-          <a
-            className={props.imageRight ? styles.linkleft : styles.linkRight}
-            href="http://"
-          >
-            Go to Website
-          </a>
+          {props.link && props.link !== "" ? (
+            <a
+              className={props.imageRight ? styles.linkleft : styles.linkRight}
+              href={props.link}
+              target="_blank"
+            >
+              Go to Website
+            </a>
+          ) : null}
         </div>
-        <h3 className={styles.title} >{props.title}</h3>
+        <h3 className={styles.title}>{props.title}</h3>
         <p>{props.description}</p>
       </div>
     </div>

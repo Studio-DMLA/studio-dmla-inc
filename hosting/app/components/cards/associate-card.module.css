@@ -21,7 +21,7 @@
 
 .blurp,
 .about {
-  overflow: scroll;
+  overflow-y: auto;
 }
 .about > h3 {
   font-size: large;
