@@ -26,7 +26,7 @@ export default function Spotlight() {
           title="Placement of Developers"
           logoAlt="Logo of bunking"
           logoImage="BunkingLogog.svg"
-          image="Macbook Portfolio Screens.png"
+          image="macbook-portfolio-screens.webp"
           imageAlt="Macbook Portfolio Screens with the bunking project on screen"
           imageRight={false}
           description={
@@ -38,8 +38,8 @@ export default function Spotlight() {
         <SpotlightCard
           title="Web Development, Maintenance & Technical SEO"
           logoAlt="Global Village website"
-          logoImage="LogoGlobalVillage.png"
-          image="Macbook Portfolio Screens Global Village.png"
+          logoImage="logoglobalvillage.webp"
+          image="macbook-portfolio-screens-global-village.webp"
           imageAlt="Macbook Portfolio Screens with the bunking project on screen"
           imageRight={true}
           description={
@@ -51,8 +51,8 @@ export default function Spotlight() {
         <SpotlightCard
           title="Web Development & Maintenance"
           logoAlt="Ielts test center"
-          logoImage="IELTS-logo.png"
-          image="Macbook Portfolio Screens - ielts.png"
+          logoImage="ielts-logo.webp"
+          image="macbook-portfolio-screens-ielts.webp"
           imageAlt="Macbook Portfolio Screens with the bunking project on screen"
           imageRight={false}
           description={
@@ -64,8 +64,8 @@ export default function Spotlight() {
         <SpotlightCard
           title="Web Migration, Development & Maintenance"
           logoAlt="Gateway site from tribe"
-          logoImage="gateway logo.png"
-          image="Macbook Portfolio Screens - gateway.png"
+          logoImage="gateway-logo.webp"
+          image="macbook-portfolio-screens-gateway.webp"
           imageAlt="Macbook Portfolio Screens with the bunking project on screen"
           imageRight={true}
           description={
@@ -77,8 +77,8 @@ export default function Spotlight() {
         <SpotlightCard
           title="Newsletter template"
           logoAlt="Logo of bunking"
-          logoImage="logoSLD.png"
-          image="Macbook Portfolio Screens - SLD.png"
+          logoImage="logosld.webp"
+          image="macbook-portfolio-screens-sld.webp"
           imageAlt="Macbook Portfolio Screens with the bunking project on screen"
           imageRight={false}
           description={
@@ -101,7 +101,7 @@ export default function Spotlight() {
           name: "Redge Quedit",
           sub_text: "Manager, Administration at Global Village Test Centre",
           image_alt: "Redge Quedit from Global Village Test Centre",
-          image_url: "redge quedit from global village.png",
+          image_url: "redge-quedit-from-global-village.webp",
         }]} />
       </div>
     </section>

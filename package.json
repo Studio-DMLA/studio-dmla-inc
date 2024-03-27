@@ -3,7 +3,8 @@
   "version": "0.5.0",
   "scripts": {
     "build": "build",
-    "deploy": "firebase deploy"
+    "deploy": "firebase deploy",
+    "deploy-prod": "firebase deploy -P production"
   },
   "repository": {
     "type": "git",

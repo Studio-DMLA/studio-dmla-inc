@@ -29,7 +29,7 @@ export default function OurImpact() {
         </p>
         <p>Here are some of our recent activities.</p>
         <ActivityCard
-          image="img_Post_Joy-of-English_AndreaHeald_10WeeksEnglishProgram_v2_300x300px 1.png"
+          image="img-post-joy-of-english-andreaheald-10weeksenglishprogram.webp"
           imageAlt="Joy-of-English Andrea Heald"
           title="The Joy of English: English for tech professionals"
           subtitle="Workshop led by Andrea Heald-Miller, M.Ed."
@@ -42,7 +42,7 @@ DMLA plans to offer this professional development opportunity every year to our 
           link=""
         />
         <ActivityCard
-          image="img_Post_VF-Contabil_Viviane_AccountingWebinar_v2_300x300px 1.png"
+          image="img-post-vf-contabil-viviane-accountingwebinar.webp"
           imageAlt="Contabil Viviane Accounting - Webinar"
           title="Accounting webinar"
           subtitle="Webinar led by accounting specialist Vivi Figueiredo"
@@ -52,7 +52,7 @@ DMLA plans to offer this professional development opportunity every year to our 
           imageRight={true}
         />
         <ActivityCard
-          image="img_flowers_Support-Associates-Dreams_300x300px 1.png"
+          image="flowers-support-associates-dreams.webp"
           imageAlt="flowers Support Associates Dreams"
           title="Supporting our associates’ dreams"
           description="At Studio DMLA, we embrace a model of business which conciliates work with a fulfilling life. One of our goals is to offer a sustainable collaboration that support our associates to pursue their dreams. We also love being a part of our Associates special moments, by sending gifts in their birthdays and other important dates."
@@ -61,7 +61,7 @@ DMLA plans to offer this professional development opportunity every year to our 
           imageRight={false}
         />
         <ActivityCard
-          image="img_Post_BackPackBuddies_edited_Brand_300x300px 1.png"
+          image="post-backpackbuddies.webp"
           imageAlt="BackPack Buddies cause"
           title="Backpack Buddies"
           subtitle="At Studio DMLA, we believe in giving back"

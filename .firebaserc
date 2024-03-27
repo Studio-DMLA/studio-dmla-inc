@@ -7,6 +7,9 @@
   "etags": {
     "studio-dmla-dev": {
       "extensionInstances": {}
+    },
+    "studio-dmla": {
+      "extensionInstances": {}
     }
   }
 }

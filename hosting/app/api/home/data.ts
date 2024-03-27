@@ -34,7 +34,7 @@ export const associatesData = [
       "I had the privilege of working with Maria Paula from 2007 to 2010 when she worked for one of the most emblematic retail companies in Brazil and a case of corporate success for the world, Casas Bahia. As CEO of a design company, I collaboratively developed projects focusing on organizational culture, internal marketing, events, and corporate campaigns, among others. “I also met Robert at that time. He was already a promising designer who moved up to another area of digital marketing and communication, becoming a specialist in front-end development today. “In addition to the professionalism present in the careers of both founders, I have to highlight their human side, which is fully reflected in the operations and the excellent team assembled by Studio DMLA. I see the constant concern with having a humanized, kind, and cordial service with both partners and customers.",
   },
   {
-    image: "AleFugita.png",
+    image: "alefugita.webp",
     imageAlt: "",
     title: "Alexandre Fugita",
     subTitle: "Senior Website Developer",
@@ -61,7 +61,7 @@ export const associatesData = [
 
 export const foundersData = [
   {
-    image: "MP-MariaPaulaMurad_Founder-President.png",
+    image: "mp-mariapaulamurad-founder-president.webp",
     imageAlt: "Maria paula braga murad founder of Studio DMLA",
     title: "Maria Paula Murad",
     subTitle: "Founder and President",
@@ -71,7 +71,7 @@ export const foundersData = [
   },
   {
     imageRight: true,
-    image: "RobertLeeuwerink_Co-founder-SeniorSoftwareDeveloper.png",
+    image: "robertleeuwerink-co-founder-seniorsoftwaredeveloper.webp",
     imageAlt: "Robert Leeuwerink co-founder of Studio DMLA",
     title: "Robert Leeuwerink",
     subTitle: "Co-founder and Senior Software Developer",
