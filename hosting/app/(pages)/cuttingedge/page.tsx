@@ -35,18 +35,21 @@ const waystowork = [
     text: "We place professionals, such as software developers, from Latin America directly into your company in North America. They will work remotely and become part of your team while enjoying the added support of the Studio DMLA team such as weekly meetings, one-to-one preparation for dev demos, English workshops and language support, and more.",
     image_url: "number1.svg",
     image_alt: "icon for direct placement",
+    width: 36
   },
   {
     title: "Assigned team:",
     text: "We assign a team to a client for a number of hours per month. This team, with DMLA’s oversight, has the skill set needed to complement your in-house team.",
     image_url: "number2.svg",
     image_alt: "icon for direct placement",
+    width: 66
   },
   {
     title: "Per scope:",
     text: "We implement a project by scope with a team and the number of hours allocated to the project.",
     image_url: "number3.svg",
     image_alt: "icon for direct placement",
+    width: 67
   },
 ];
 
@@ -69,7 +72,7 @@ export default function CuttingEdge() {
                 src={spec.image_url}
                 alt={spec.image_alt}
                 loading="lazy"
-                width={160}
+                width={161}
                 height={160}
                 style={{
                   width: "auto",
@@ -123,7 +126,7 @@ export default function CuttingEdge() {
                   src={way.image_url}
                   loading="lazy"
                   alt={way.image_alt}
-                  width={80}
+                  width={way.width}
                   height={80}
                   style={{
                     width: "auto",
