@@ -31,6 +31,9 @@
 
 }
 
+.sideImageRatio {
+  max-width: fit-content;
+}
 
 
   .grid {

@@ -21,6 +21,8 @@ export default function SectionHeader(props: Props) {
        src={image}
        loading="lazy"
        alt={alt}
+       width={160}
+       height={160}
        style={{
          width: "10rem",
          height: "auto",

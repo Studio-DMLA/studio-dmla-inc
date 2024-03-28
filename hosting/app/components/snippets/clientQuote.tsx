@@ -17,6 +17,8 @@ export default function ClientQoute(props: Quote) {
           src="/6 circles outline.svg"
           loading="lazy"
           alt="6 circles outlined decorative"
+          width={50}
+          height={80}
           style={{
             width: "auto",
             height: "5rem",
@@ -27,6 +29,8 @@ export default function ClientQoute(props: Quote) {
           src={"/" + props.image_url}
           loading="lazy"
           alt={props.image_alt}
+          width={222}
+          height={224}
           style={{
             width: "auto",
             height: "14rem",
@@ -40,6 +44,8 @@ export default function ClientQoute(props: Quote) {
             src={"/quote mark.svg"}
             loading="lazy"
             alt="Quote Mark"
+            width={28}
+            height={28}
             style={{
               width: "auto",
               height: "1.75rem",
@@ -52,6 +58,8 @@ export default function ClientQoute(props: Quote) {
             src={"/quote mark.svg"}
             loading="lazy"
             alt="Quote Mark"
+            width={28}
+            height={28}
             style={{
               width: "auto",
               height: "1.75rem",

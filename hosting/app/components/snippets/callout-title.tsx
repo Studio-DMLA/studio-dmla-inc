@@ -19,6 +19,8 @@ export default function CalloutTitle(props: Props) {
         src={"/" + props.image_url}
         loading="lazy"
         alt={props.image_alt}
+        width={132}
+        height={88}
         style={{
           width: "auto",
           height: "5.5rem",
@@ -46,9 +48,12 @@ export default function CalloutTitle(props: Props) {
           )}
         </div>
         {props.side_image_url ? (<img
+        className={styles.sideImageRatio}
           src={"/" + props.side_image_url}
           loading="lazy"
           alt={props.side_image_alt}
+          width={227}
+          height={256}
           style={{
             width: "auto",
             height: "16rem",

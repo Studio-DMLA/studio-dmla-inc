@@ -12,6 +12,8 @@ export default function OurImpact() {
           className={styles.globe}
           src="/hands-globe.svg"
           loading="lazy"
+          width={160}
+          height={160}
           alt=""
           style={{
             width: "10rem",

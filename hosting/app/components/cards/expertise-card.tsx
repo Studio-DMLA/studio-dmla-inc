@@ -26,6 +26,8 @@ export default function ExpertiseCard(props: Props) {
             src={"/plus-art.svg"}
             loading="lazy"
             alt="decorative vector of a plus vector"
+            width={18}
+            height={18}
             style={{
               width: "auto",
               height: "1.1rem",
@@ -35,6 +37,8 @@ export default function ExpertiseCard(props: Props) {
             src={"/" + props.image}
             loading="lazy"
             alt={props.imageAlt}
+            width={160}
+            height={160}
             style={{
               width: "10rem",
               height: "auto",
@@ -60,6 +64,8 @@ function TitleDescription(props: SubjectsArrayItem) {
         src={"/plus-art.svg"}
         loading="lazy"
         alt="decorative vector of a plus vector"
+        width={18}
+        height={18}
         style={{
           width: "auto",
           height: "1.1rem",

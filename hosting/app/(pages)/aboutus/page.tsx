@@ -23,6 +23,8 @@ export default function AboutUs() {
               src={"/Our Mission.svg"}
               loading="lazy"
               alt={"Our Mission"}
+              width={72}
+              height={72}
               style={{
                 width: "auto",
                 height: "4.5rem",
@@ -42,6 +44,8 @@ export default function AboutUs() {
               src={"/Our Values.svg"}
               loading="lazy"
               alt={"Our values"}
+              width={72}
+              height={72}
               style={{
                 width: "auto",
                 height: "4.5rem",
@@ -67,6 +71,8 @@ export default function AboutUs() {
             src={"/ourteam.svg"}
             loading="lazy"
             alt={"Our team icon with 4 heads overlapped"}
+            width={56}
+            height={56}
             style={{
               width: "3.5rem",
               height: "auto",
@@ -81,6 +87,8 @@ export default function AboutUs() {
             src={"/ourassociates.svg"}
             loading="lazy"
             alt={"Our associates icon with 3 heads overlapped"}
+            width={56}
+            height={56}
             style={{
               width: "3.5rem",
               height: "auto",

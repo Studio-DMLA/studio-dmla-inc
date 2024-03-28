@@ -1,25 +1,7 @@
 import { MetadataRoute } from "next";
+import { menuItems } from "./api/home/menu";
 export const baseUrl = 'https://studio-dmla.ca';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  return [
-    {
-      url: `${baseUrl}/#aboutus`
-    },
-    {
-      url: `${baseUrl}/#wedo`
-    },
-    {
-      url: `${baseUrl}/#spotlight`
-    },
-    {
-      url: `${baseUrl}/#ourimpact`
-    },
-    {
-      url: `${baseUrl}/#contactus`
-    },
-    {
-      url: `${baseUrl}/#bookaconsultation`
-    }
-  ]
+  return menuItems.map(nav =>({url: `${baseUrl}/#${nav.href}`}));
 }

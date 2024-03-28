@@ -1,6 +1,6 @@
 "use client";
 import Script from "next/script";
-import styles from "./page.module.css"
+import styles from "./page.module.css";
 
 export default function BookaMeeting() {
   return (
@@ -14,9 +14,7 @@ export default function BookaMeeting() {
         className="meetings-iframe-container"
         data-src="https://meetings.hubspot.com/mariapaula3?embed=true"
       ></div>
-      <div 
-      id="bookaconsultation"
-        className={styles.bookaconsultation}></div>
+      <div id="bookaconsultation" className={styles.bookaconsultation}></div>
     </div>
   );
 }

@@ -26,6 +26,8 @@ export default function ActivityCard(props: Props) {
           src={"/" + props.image}
           loading="lazy"
           alt={props.imageAlt}
+          width={280}
+          height={280}
           style={{
             width: "17.5rem",
             height: "auto",
@@ -36,6 +38,8 @@ export default function ActivityCard(props: Props) {
           src="/4 circles outline.svg"
           loading="lazy"
           alt="decorative svg"
+          width={60}
+          height={60}
           style={{
             width: "auto",
             height: "3.75rem",
@@ -46,6 +50,8 @@ export default function ActivityCard(props: Props) {
           src="/corner-point.svg"
           loading="lazy"
           alt="decorative svg"
+          width={20}
+          height={20}
           style={{
             width: "auto",
             height: "1.25rem",

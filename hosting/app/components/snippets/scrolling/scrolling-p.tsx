@@ -9,8 +9,16 @@ interface Props {
 export default function ScrollingP(props: Props) {
   return (
     <>
-
-    <p className={props.leftRight ? styles.before : styles.after} style={{maxHeight: props.maxHeight ?? 'none', overflowY: props.maxHeight ? 'scroll' : 'auto', overflowX: 'hidden'}}>{props.p}</p>
+      <p
+        className={props.leftRight ? styles.before : styles.after}
+        style={{
+          maxHeight: props.maxHeight ?? "none",
+          overflowY: props.maxHeight ? "scroll" : "auto",
+          overflowX: "hidden",
+        }}
+      >
+        {props.p}
+      </p>
     </>
   );
 }

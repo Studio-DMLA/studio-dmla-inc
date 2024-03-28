@@ -8,6 +8,8 @@
 
 .platformLogo {
   display: block;
+  width: fit-content;
+  height: fit-content;
 }
 .platformReason {
   display: inline-block;

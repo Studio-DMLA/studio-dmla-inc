@@ -134,6 +134,8 @@ export default function Wedo() {
             src={p.image.src}
             alt={p.image.alt}
             loading="lazy"
+            width={60}
+            height={60}
             style={{
               width: "auto",
               height: "3.75rem",
@@ -151,6 +153,8 @@ export default function Wedo() {
               src={"/hands-shaking.svg"}
               loading="lazy"
               alt="looking glass with a checkmark"
+              width={47}
+              height={32}
               style={{
                 width: "auto",
                 height: "2rem",
@@ -165,6 +169,8 @@ export default function Wedo() {
               src={"/number1.svg"}
               loading="lazy"
               alt="decorative image of numbers"
+              width={14}
+              height={32}
               style={{
                 width: "auto",
                 height: "2rem",
@@ -180,6 +186,8 @@ export default function Wedo() {
               src={"/number2.svg"}
               loading="lazy"
               alt="decorative image of numbers"
+              width={26}
+              height={32}
               style={{
                 width: "auto",
                 height: "2rem",
@@ -195,6 +203,8 @@ export default function Wedo() {
               src={"/number3.svg"}
               loading="lazy"
               alt="decorative image of numbers"
+              width={27}
+              height={32}
               style={{
                 width: "auto",
                 height: "2rem",

@@ -25,6 +25,8 @@ export default function AssociateCard(props: Props) {
           src={"/" + props.image}
           loading="lazy"
           alt={props.imageAlt}
+          width={240}
+          height={240}
           style={{
             width: "auto",
             height: "15rem",
@@ -35,6 +37,8 @@ export default function AssociateCard(props: Props) {
             src={"/flag-brazil.svg"}
             alt={"location Brazil flag icon image"}
             loading="lazy"
+            width={80}
+            height={80}
             style={{
               width: "auto",
               height: "5rem",
@@ -47,6 +51,8 @@ export default function AssociateCard(props: Props) {
           src={"/blurp.svg"}
           loading="lazy"
           alt={"blurp background image"}
+          width={240}
+          height={240}
           style={{
             width: "auto",
             height: "15rem",

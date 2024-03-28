@@ -69,6 +69,8 @@ export default function CuttingEdge() {
                 src={spec.image_url}
                 alt={spec.image_alt}
                 loading="lazy"
+                width={160}
+                height={160}
                 style={{
                   width: "auto",
                   height: "10rem",
@@ -79,6 +81,8 @@ export default function CuttingEdge() {
                   src={"/plus-art.svg"}
                   alt="bullet icon text"
                   loading="lazy"
+                  width={16}
+                  height={16}
                   style={{
                     width: "auto",
                     height: "1rem",
@@ -100,6 +104,8 @@ export default function CuttingEdge() {
               src={"/roadmap guide.svg"}
               loading="lazy"
               alt="icon of 2 chat bubbles"
+              width={48}
+              height={48}
               style={{
                 width: "auto",
                 height: "3rem",
@@ -117,6 +123,8 @@ export default function CuttingEdge() {
                   src={way.image_url}
                   loading="lazy"
                   alt={way.image_alt}
+                  width={80}
+                  height={80}
                   style={{
                     width: "auto",
                     height: "5rem",

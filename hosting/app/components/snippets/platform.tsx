@@ -15,6 +15,8 @@ export default function Platform(props: Props) {
         src={props.image}
         loading="lazy"
         alt={props.alt}
+        width={189}
+        height={38}
       />
       
       <span className={styles.platformReason}>{props.reason}</span>

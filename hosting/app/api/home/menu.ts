@@ -25,11 +25,6 @@ export const menuItems = [
     href: "ourimpact",
   },
   {
-    text: "Contact",
-    role: "go to Contact section",
-    href: "contactus",
-  },
-  {
     text: "Consultation",
     role: "go to Book a free Consultation section",
     href: "bookaconsultation",

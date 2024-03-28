@@ -15,6 +15,8 @@ export default function ClientQuotes(props: Props) {
           src={"/client quote icon.svg"}
           loading="lazy"
           alt="icon of 2 chat bubbles"
+          width={161}
+          height={88}
           style={{
             width: "auto",
             height: "5.5rem",
@@ -28,6 +30,8 @@ export default function ClientQuotes(props: Props) {
           src={"/double arrow carrousel.svg"}
           loading="lazy"
           alt="icon of forward arrow carrousel"
+          width={24}
+          height={24}
           style={{
             width: "auto",
             height: "1.5rem",
@@ -41,6 +45,8 @@ export default function ClientQuotes(props: Props) {
           src={"/double arrow carrousel.svg"}
           loading="lazy"
           alt="icon of backward  arrow carrousel"
+          width={24}
+          height={24}
           style={{
             width: "auto",
             height: "1.5rem",

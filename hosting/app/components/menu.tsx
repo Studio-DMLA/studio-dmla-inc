@@ -15,6 +15,8 @@ export default function Menu() {
             src="/Studio DMLA brand.svg"
             loading="lazy"
             alt="menu"
+            width={68}
+            height={29}
             style={{
               width: "4.25rem",
               height: "auto",

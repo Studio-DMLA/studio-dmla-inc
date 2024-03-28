@@ -6,6 +6,8 @@ export default function MenuButton(props: {
   text: string;
   role: string;
   href: string;
+  width?: number;
+  height?: number;
 }) {
   const attriPreIcon = {
     src: "/" + props.startIcon + ".svg",

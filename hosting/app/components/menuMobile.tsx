@@ -18,6 +18,8 @@ export default function MenuMobile() {
             src="/DMLA-menu.svg"
             loading="lazy"
             alt="menu"
+            width={40}
+            height={22}
             style={{
               width: "2.5rem",
               height: "auto",
@@ -28,6 +30,8 @@ export default function MenuMobile() {
               src="/Studio DMLA brand.svg"
               loading="lazy"
               alt="menu"
+              width={68}
+              height={29}
               style={{
                 width: "4.25rem",
                 height: "auto",

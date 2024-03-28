@@ -91,6 +91,8 @@ export default function Spotlight() {
           src={"/3 circles outline.svg"}
           loading="lazy"
           alt="3 circles to add as a divider"
+          width={150}
+          height={34}
           style={{
             width: "auto",
             height: "2rem",

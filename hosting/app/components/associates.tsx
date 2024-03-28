@@ -16,6 +16,8 @@ export default function Associates() {
               src={"/" + associate.image}
               loading="lazy"
               alt={associate.imageAlt}
+              width={104}
+              height={104}
               style={{
                 width: "6.5rem",
                 height: "auto",

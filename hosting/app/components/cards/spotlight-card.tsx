@@ -26,6 +26,8 @@ export default function SpotlightCard(props: Props) {
           src={"/" + props.image}
           loading="lazy"
           alt={props.imageAlt}
+          width={280}
+          height={173}
           style={{
             width: "17.5rem",
             height: "auto",
@@ -39,6 +41,8 @@ export default function SpotlightCard(props: Props) {
             src={"/" + props.logoImage}
             loading="lazy"
             alt={props.logoAlt}
+            width={170}
+            height={42}
             style={{
               width: "auto",
               height: "2.65rem",

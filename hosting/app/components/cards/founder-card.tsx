@@ -27,6 +27,8 @@ export default function FounderCard(props: Props) {
           src={"/canada_circles.svg"}
           loading="lazy"
           alt={"canada location icon image"}
+          width={80}
+          height={80}
           style={{
             width: "5rem",
             height: "auto",
@@ -39,6 +41,8 @@ export default function FounderCard(props: Props) {
           src={"/" + props.image}
           loading="lazy"
           alt={props.imageAlt}
+          width={280}
+          height={219}
           style={{
             width: "17.5rem",
             height: "auto",
