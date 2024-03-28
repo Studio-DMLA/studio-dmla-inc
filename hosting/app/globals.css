@@ -1,25 +1,25 @@
 :root {
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 95, 104;
-    --background-end-rgb: 0, 95, 104;
-    --menu-gradient-start: 35, 47, 50, 1;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 95, 104;
+  --background-end-rgb: 0, 95, 104;
+  --menu-gradient-start: 35, 47, 50, 1;
 
-    --primary-color: rgba(0, 95, 104, 1);
-    --secondary-color: rgba(62, 152, 166, 1);
-    --gray-dark-color: rgba(35, 47, 50, 1);
-    --gray-medium-color:rgba(138, 140, 142, 1);
-    --gray-light-color:rgba(241, 240, 240, 1);
-    --white: #fff;
-    --white-color: #fff;
+  --primary-color: rgba(0, 95, 104, 1);
+  --secondary-color: rgba(62, 152, 166, 1);
+  --gray-dark-color: rgba(35, 47, 50, 1);
+  --gray-medium-color: rgba(138, 140, 142, 1);
+  --gray-light-color: rgba(241, 240, 240, 1);
+  --white: #fff;
+  --white-color: #fff;
 
-    --highlight-color: rgba(174, 255, 2, 1);
-    --mute-color: rgba(111, 178, 188, 1);
+  --highlight-color: rgba(174, 255, 2, 1);
+  --mute-color: rgba(111, 178, 188, 1);
 
-    --gap: clamp(1rem, 6vw, 3rem);
+  --gap: clamp(1rem, 6vw, 3rem);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,6 +45,27 @@
 }
 .font-color_mute {
   color: var(--mute-color);
+}
+.bg-color_white {
+  background-color: var(--white);
+}
+.bg-color_primary {
+  background-color: var(--primary-color);
+}
+.bg-color_secondary {
+  background-color: var(--secondary-color);
+}
+.bg-color_gray-dark {
+  background-color: var(--gray-dark-color);
+}
+.bg-color_gray-medium {
+  background-color: var(--gray-medium-color);
+}
+.bg-color_gray-light {
+  background-color: var(--gray-light-color);
+}
+.bg-color_mute {
+  background-color: var(--mute-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -81,7 +102,6 @@ a {
   }
 }
 
-
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -108,7 +128,6 @@ a {
   .hide-on-mobile {
     display: none !important;
   }
-
 }
 
 /* Tablet and Smaller Desktop */
@@ -118,7 +137,7 @@ a {
   }
 }
 /* Desktop  and larger */
-@media (min-width: 1120px)  {
+@media (min-width: 1120px) {
   .hide-on-desktop {
     display: none !important;
   }
@@ -135,7 +154,6 @@ a {
 }
 
 .content {
-  
   --full: minmax(var(--gap), 1fr);
   --content: min(100ch, 100% - var(--gap) * 2);
   --popout: minmax(0, 3rem);
@@ -165,7 +183,7 @@ a {
   grid-column: full;
 }
 
-.content > * + *, .typ-gap > * + * {
+.typ-gap > * + * {
   margin-bottom: var(--gap);
 }
 .typ-gap-half > * + * {
@@ -189,29 +207,13 @@ a {
   gap: var(--gap);
 }
 .half-gap {
-  gap: calc(var(--gap)/2);
+  gap: calc(var(--gap) / 2);
 }
 .display-grid {
   display: grid;
 }
 .flex-row {
   flex-direction: column;
-}
-
-.clipPathAt40 {
-  clip-path: polygon(0 0, 40% 0, 50% 10%, 100% 10%, 100% 100%, 0 100%);
-}
-.clipPathAt50 {
-  clip-path: polygon(0 0, 50% 0, 60% 10%, 100% 10%, 100% 100%, 0 100%);
-}
-.clipPathAt60 {
-  clip-path: polygon(0 0, 60% 0, 70% 10%, 100% 10%, 100% 100%, 0 100%);
-}
-.clipPathAt70 {
-  clip-path: polygon(0 0, 70% 0, 80% 10%, 100% 10%, 100% 100%, 0 100%);
-}
-.clipPathAt80 {
-  clip-path: polygon(0 0, 80% 0, 90% 10%, 100% 10%, 100% 100%, 0 100%);
 }
 
 .rotate180 {

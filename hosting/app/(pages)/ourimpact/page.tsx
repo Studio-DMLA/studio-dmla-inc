@@ -22,7 +22,7 @@ export default function OurImpact() {
         />
         <h3>Sustainability starts from within</h3>
       </div>
-      <div className={styles.mainContent + ' content subgrid'}>
+      <div className={styles.mainContent + ' content typ-gap subgrid'}>
         <p>
           At Studio DMLA, we love to show our appreciation and promote the
           development of our associates. Our main contribution is the economic

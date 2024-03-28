@@ -1,4 +1,68 @@
 .footer {
+  grid-auto-flow: row;
+  position: relative;
+}
+
+.logo {
+  position: relative;
+  top: -5rem;
   display: grid;
-  background-color: var(--white);
+  grid-auto-flow: column;
+  grid-template-columns: 1fr minmax(100px, 250px) 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.socials {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0.5rem;
+}
+
+.cutLogo {
+  background-color: var(--gray-light-color);
+  
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  clip-path: polygon(10% 0, 100% 0, 100% 80%, 90% 100%, 0 100%, 0 20%);
+}
+.cutLogo > img {
+  margin: 1rem 2.5rem;
+}
+
+.footerEnd {
+  max-width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 5rem;
+}
+.footerEnd > svg {
+  max-width: 100%;
+  grid-area: 1 / 1;
+}
+
+.world {
+  width: 23vw;
+  margin-top: 3.8em;
+}
+
+
+@media screen and (max-width:750px){  
+  .footerEnd > svg {
+    display: none !important;
+  }
+  .footerEnd > .world {
+    display: block !important;
+    width: 50vw;
+  }
+  .logo {
+    position: unset !important;;
+    top: 0;
+    grid-auto-flow: row !important;;
+  }
 }

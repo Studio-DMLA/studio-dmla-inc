@@ -8,6 +8,7 @@ import styles from "./page.module.css";
 import Platforms from "./(pages)/platforms/page";
 import Spotlight from "./(pages)/spotlight/page";
 import Wedo from "./(pages)/wedo/page";
+import SectionSplitter from "./components/snippets/section-splitter";
 
 export default function Home() {
   return (
@@ -18,12 +19,19 @@ export default function Home() {
         <HeroMobile />
         <HeroTablet />
       </div>
+      <SectionSplitter offset={-1} split={20} startColor="gray-light" endColor="primary" />
       <CuttingEdge />
+      <SectionSplitter split={30} startColor="primary" endColor="gray-light" />
       <AboutUs />
+      <SectionSplitter offset={1} split={40} startColor="mute" endColor="primary" />
       <Wedo />
+      <SectionSplitter offset={2} split={50} startColor="gray-light" endColor="mute" />
       <Spotlight />
+      <SectionSplitter offset={3} split={60} startColor="mute" endColor="gray-light" />
       <OurImpact />
+      <SectionSplitter offset={4} split={70} startColor="gray-light" endColor="mute" />
       <Platforms />
+      <SectionSplitter offset={5} split={80} startColor="primary" endColor="gray-light" />
     </main>
   );
 }

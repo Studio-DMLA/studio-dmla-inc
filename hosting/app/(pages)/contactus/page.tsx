@@ -14,7 +14,7 @@ export default function ContactUs() {
     }
   };
   return (
-    <div className="content block">
+    <div className="content typ-gap block">
       <Script
         src="https://js.hsforms.net/forms/v2.js"
         onLoad={hubspot}

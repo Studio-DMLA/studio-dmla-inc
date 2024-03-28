@@ -127,7 +127,7 @@ export default function Wedo() {
     >
       <SectionHeader
       id={p.sectionId} {...p.sectionHeader} />
-      <div className="content display-flex flex-justify-center flex-row font-color_white">
+      <div className="content typ-gap display-flex flex-justify-center flex-row font-color_white">
         <CalloutTitle {...p.callOutTitle} />
         <div className="display-flex flex-align-center gap">
           <img

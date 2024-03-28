@@ -16,7 +16,7 @@ export default function Platforms() {
 
       <div
         className={
-          styles.platformList + " content"
+          styles.platformList + " content typ-gap"
         }
       >
         <Platform image="/1password-logo.svg" alt="1password for password management" reason="security" link="https://1password.com" />

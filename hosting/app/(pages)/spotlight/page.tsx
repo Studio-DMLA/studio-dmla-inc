@@ -12,7 +12,7 @@ export default function Spotlight() {
     >
       <SectionHeader 
       id="spotlight" title="PROJECT SPOTLIGHT" subtitle="" titleColor="secondary-color"/>
-      <div className="content display-flex flex-justify-center flex-row font-color_gray-medium">
+      <div className="content typ-gap display-flex flex-justify-center flex-row font-color_gray-medium">
         <CalloutTitle
           title={"Check out some of our recent projects:"}
           title_color="primary"

@@ -12,7 +12,7 @@ export default function AboutUs() {
   return (
     <section className={styles.aboutus + " full"}>
       <SectionHeader id={page.id} {...page.sectionHeader} />
-      <div className="content display-flex flex-justify-center flex-row font-color_mute">
+      <div className="content typ-gap display-flex flex-justify-center flex-row font-color_mute">
         <CalloutTitle
           {...page.calloutTitle}
         />

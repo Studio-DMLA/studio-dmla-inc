@@ -1,7 +1,6 @@
 .cuttingedge {
   display: grid;
   background-color: var(--gray-light-color);
-  padding: var(--gap) 0;
 }
 
 .specialize {
@@ -42,6 +41,12 @@
 }
 .titleArea > img {
   grid-row: span 2;
+}
+
+.book {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .ways {
