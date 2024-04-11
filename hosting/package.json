@@ -2,10 +2,14 @@
   "private": true,
   "name": "studio-dmla-inc",
   "version": "0.5.0",
+  "author": "Robert Leeuwerink",
+  "license": "ISC",
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "firebase deploy",
+    "deploy-prod": "firebase deploy -P production"
   },
   "dependencies": {
     "@next/third-parties": "^14.1.4",
