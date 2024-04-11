@@ -11,13 +11,14 @@ jobs:
   build_and_preview:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./hosting
     steps:
       - uses: actions/checkout@v4
-      - run: npm install
-      - run: npm run build
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./hosting
+      - name: Run build
+        run: npm run build
+        working-directory: ./hosting
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
