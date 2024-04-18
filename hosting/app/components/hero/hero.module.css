@@ -10,3 +10,56 @@
     min-height: 20px;
   }
 }
+
+.desktophero {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template: "container";
+  position: relative;
+  
+  justify-items: center;
+  align-items: end;
+}
+
+.desktophero > img,
+.desktophero > div {
+  grid-area: 1 / 1;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  pad: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.desktophero > div {
+  grid-area: 1 / 1;
+  display: grid;
+  grid-template-columns: 36ch 36ch;
+  grid-template-rows: 1fr 1fr;
+  margin: auto 11rem 6em 11rem;
+  column-gap: 5rem;
+  row-gap: 1rem;
+}
+.quote {
+  grid-row: span 2;
+  display: flex;
+  gap: 0.5rem;
+}
+.quote > blockquote {
+  text-align: center;
+}
+
+.quote > img:first-child {
+  align-self: flex-start;
+}
+.quote > img:last-child {
+  align-self: flex-end;
+}

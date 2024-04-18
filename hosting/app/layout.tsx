@@ -20,6 +20,44 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
+  
+  metadataBase: new URL('https://studio-dmla.ca'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/',
+    },
+  },
+
+  openGraph: {
+    title: 'Studio DMLA Inc.',
+    description: 'Studio DMLA portfolio and marketing website. Book a free consultation, see some of our products and service we offer. We partner with the best in each field from Latin America and locally to deliver cutting-edge digital solutions to Canadian companies while being responsible for the strategy, project management, and final product.',
+    url: 'https://studio-dmla.ca',
+    siteName: 'Studio DMLA Inc.',
+    images: [
+      {
+        url: 'https://studio-dmla.ca/opengraph-image.png',
+        width: 1200,
+        height: 600,
+        alt: 'Studio DMLA portfolio and marketing website. Book a free consultation, see some of our products and service we offer. We partner with the best in each field from Latin America and locally to deliver cutting-edge digital solutions to Canadian companies while being responsible for the strategy, project management, and final product.',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+
+  generator: 'Next.js',
+  applicationName: 'Studio DMLA',
+  referrer: 'origin-when-cross-origin',
+  keywords: ['Next.js', 'Software developers', 'Technical SEO', 'Software', 'Digital Development', 'Digital Marketing', 'Web Development', 'Wordpress Development', 'Web design', 'Web Maintenance'],
+  authors: [{ name: 'Robert Leeuwerink', url: 'https://www.linkedin.com/in/robertleeuwerink/' }],
+  creator: 'Robert Leeuwerink',
+  publisher: 'Robert Leeuwerink',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
 };
 
 const resolvedMetadata = {
