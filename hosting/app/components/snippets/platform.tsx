@@ -9,7 +9,7 @@ interface Props {
 
 export default function Platform(props: Props) {
   return (
-    <a className={styles.platform} href={props.link} target="_blank">
+    <a className={styles.platform + ' muted'} href={props.link} target="_blank">
       <img
         className={styles.platformLogo}
         src={props.image}

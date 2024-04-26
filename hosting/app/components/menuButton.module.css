@@ -1,5 +1,5 @@
 .navPreIcon {
-  border-bottom: white 1px solid;
+  border-bottom: var(--white-color) var(--border-width) solid;
   display: grid;
   height: 100%;
   align-items: center;
@@ -11,12 +11,14 @@
 
 .text {
   white-space: nowrap;
-  border-bottom: white 1px solid;
+  border-bottom: var(--white-color) var(--border-width) solid;
   padding-right: 1rem;
 }
 
 
 .navButton {
+  --border-width: 1.5px;
+
   display: flex;
   position: relative;
   min-width: -webkit-fill-available;
@@ -26,10 +28,22 @@
 }
   
 .line45 {
-  border-bottom: white 1px solid;
+  border-bottom: var(--white-color) var(--border-width) solid;
   width: 24px;
   bottom: 8px;
   right: 4px;
   position: relative;
   transform: rotate(-45deg);
+}
+a.navButton:hover {
+  color: var(--mute-color) !important;
+  fill: var(--mute-color) !important;
+}
+
+a.navButton:hover > .line45 {
+  border-bottom: var(--mute-color) var(--border-width) solid;
+}
+
+a.navButton:hover > .text {
+  border-bottom: var(--mute-color) var(--border-width) solid;
 }

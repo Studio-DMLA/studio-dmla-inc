@@ -1,7 +1,6 @@
 .aboutus {
   display: grid;
   background-color: var(--primary-color);
-  color: var(--mute-color);
   grid-template-columns: subgrid;
   padding: var(--gap) 0;
 }

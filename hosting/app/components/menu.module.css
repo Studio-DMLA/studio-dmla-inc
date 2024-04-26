@@ -80,3 +80,7 @@
     font-size: smaller;
   }
 }
+
+a:hover > .brandImage {
+  filter: invert(24%) sepia(20%) saturate(710%) hue-rotate(140deg) brightness(77%) contrast(90%);
+}

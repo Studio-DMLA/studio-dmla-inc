@@ -1,6 +1,8 @@
 .cuttingedge {
   display: grid;
   background-color: var(--gray-light-color);
+  grid-template-columns: subgrid;
+  padding: var(--gap) 0;
 }
 
 .specialize {

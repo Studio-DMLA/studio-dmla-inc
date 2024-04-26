@@ -1,4 +1,3 @@
-import Link from "next/link";
 import SectionHeader from "../../components/snippets/section-header";
 import styles from "./page.module.css";
 import BookaMeetingButton from "../../components/snippets/bookameeting";
@@ -57,7 +56,7 @@ const waystowork = [
 export default function CuttingEdge() {
   return (
     <section
-      className={styles.cuttingedge + " full subgrid font-color_primary"}
+      className={styles.cuttingedge + " full font-color_primary"}
     >
       <SectionHeader
         id="cuttingedge"

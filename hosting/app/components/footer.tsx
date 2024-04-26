@@ -14,7 +14,7 @@ export const data = {
     width: 140,
     height: 50,
   },
-  socials: ["instagram", "linkedin", "facebook"],
+  socials: [{type:"instagram", href: 'https://www.instagram.com/studiodmla/'}, {type:"linkedin", href: 'https://www.linkedin.com/company/studio-dmla/'}, {type:"facebook", href:'https://www.facebook.com/StudioDMLA'}],
   p: "",
 };
 
@@ -41,7 +41,7 @@ export default function Footer() {
           <div className={styles.socials}>
             {data.socials.map((s, key) => (
               <div key={key} className={styles.social}>
-                <Socials type={s} />
+                <Socials {...s} />
               </div>
             ))}
           </div>

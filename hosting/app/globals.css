@@ -7,7 +7,7 @@
   --background-start-rgb: 0, 95, 104;
   --background-end-rgb: 0, 95, 104;
   --menu-gradient-start: 35, 47, 50, 1;
-
+  
   --primary-color: rgba(0, 95, 104, 1);
   --secondary-color: rgba(62, 152, 166, 1);
   --gray-dark-color: rgba(35, 47, 50, 1);
@@ -17,7 +17,7 @@
   --white-color: #fff;
 
   --highlight-color: rgba(174, 255, 2, 1);
-  --mute-color: rgba(111, 178, 188, 1);
+  --mute-color: rgb(111, 178, 188);
 
   --gap: clamp(1rem, 6vw, 3rem);
 }
@@ -29,6 +29,24 @@
     --background-end-rgb: 0, 95, 104;
     --menu-gradient-start: 35, 47, 50, 1;
   }
+}
+
+a:hover, a:focus {
+  color: var(--primary-color) !important;
+  fill: var(--primary-color) !important;
+}
+
+a.muted {
+  color: var(--secondary-color) !important;
+  fill: var(--secondary-color) !important;
+}
+a.muted:hover {
+  color: var(--mute-color) !important;
+  fill: var(--mute-color) !important;
+}
+a.strong:hover {
+  color: var(--highlight-color) !important;
+  fill: var(--highlight-color) !important;
 }
 
 .font-color_white {

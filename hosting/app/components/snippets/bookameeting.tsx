@@ -1,6 +1,6 @@
 export default function BookaMeetingButton() {
   return (
-    <a href="#bookaconsultation" className="">
+    <a href="#bookaconsultation" className="muted">
       <svg
         width="196"
         height="57"
@@ -14,7 +14,7 @@ export default function BookaMeetingButton() {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M0 0V57H184.6L196 45.6V0H0Z"
-              fill="#3E98A6"
+              fill="currentColor"
             />
           </g>
           <g clipPath="url(#clip2_805_5944)">
