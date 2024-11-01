@@ -1,6 +1,6 @@
 {
   "projects": {
-    "default": "studio-dmla-dev",
+    "default": "studio-dmla",
     "production": "studio-dmla"
   },
   "targets": {},
